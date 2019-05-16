@@ -1,0 +1,1406 @@
+webpackJsonp(["main"],{
+
+/***/ "../../../../../src/$$_gendir lazy recursive":
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncatched exception popping up in devtools
+	return Promise.resolve().then(function() {
+		throw new Error("Cannot find module '" + req + "'.");
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "../../../../../src/$$_gendir lazy recursive";
+
+/***/ }),
+
+/***/ "../../../../../src/app/app.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/app.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"wrapper\">\n    <div class=\"sidebar\" data-background-color=\"white\" data-active-color=\"danger\">\n        <sidebar-cmp></sidebar-cmp>\n    </div>\n    <div class=\"main-panel\">\n        \n        <navbar-cmp></navbar-cmp>\n        <div class=\"content\">\n            <router-outlet></router-outlet>\n        </div>\n        <!-- <footer-cmp></footer-cmp> -->\n    </div>\n</div>\n<!-- <fixedplugin-cmp></fixedplugin-cmp> -->\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/app.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var AppComponent = (function () {
+    function AppComponent() {
+    }
+    return AppComponent;
+}());
+AppComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-root',
+        template: __webpack_require__("../../../../../src/app/app.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/app.component.css")]
+    })
+], AppComponent);
+
+//# sourceMappingURL=app.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/app.module.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("../../../platform-browser/@angular/platform-browser.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_routing__ = __webpack_require__("../../../../../src/app/app.routing.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__sidebar_sidebar_module__ = __webpack_require__("../../../../../src/app/sidebar/sidebar.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_footer_footer_module__ = __webpack_require__("../../../../../src/app/shared/footer/footer.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__shared_navbar_navbar_module__ = __webpack_require__("../../../../../src/app/shared/navbar/navbar.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__shared_fixedplugin_fixedplugin_module__ = __webpack_require__("../../../../../src/app/shared/fixedplugin/fixedplugin.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ngui_map__ = __webpack_require__("../../../../@ngui/map/dist/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ngui_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__ngui_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__dashboard_dashboard_component__ = __webpack_require__("../../../../../src/app/dashboard/dashboard.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__user_user_component__ = __webpack_require__("../../../../../src/app/user/user.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__table_table_component__ = __webpack_require__("../../../../../src/app/table/table.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__typography_typography_component__ = __webpack_require__("../../../../../src/app/typography/typography.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__icons_icons_component__ = __webpack_require__("../../../../../src/app/icons/icons.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__maps_maps_component__ = __webpack_require__("../../../../../src/app/maps/maps.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__notifications_notifications_component__ = __webpack_require__("../../../../../src/app/notifications/notifications.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__upgrade_upgrade_component__ = __webpack_require__("../../../../../src/app/upgrade/upgrade.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_fusioncharts__ = __webpack_require__("../../../../fusioncharts/fusioncharts.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_fusioncharts___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18_fusioncharts__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_fusioncharts_fusioncharts_widgets__ = __webpack_require__("../../../../fusioncharts/fusioncharts.widgets.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_fusioncharts_fusioncharts_widgets___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_19_fusioncharts_fusioncharts_widgets__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20_angular_fusioncharts__ = __webpack_require__("../../../../angular-fusioncharts/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_fusioncharts_themes_fusioncharts_theme_fusion__ = __webpack_require__("../../../../fusioncharts/themes/fusioncharts.theme.fusion.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_fusioncharts_themes_fusioncharts_theme_fusion___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_21_fusioncharts_themes_fusioncharts_theme_fusion__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+
+
+
+// import { AmChartsModule } from "@amcharts/amcharts3-angular";
+
+
+
+
+
+
+
+
+
+// import {ProgressBarModule} from "angular-progress-bar"
+
+//import Column2D from 'fusioncharts'
+// Include Below Snippet
+
+
+__WEBPACK_IMPORTED_MODULE_20_angular_fusioncharts__["a" /* FusionChartsModule */].fcRoot(__WEBPACK_IMPORTED_MODULE_18_fusioncharts__, __WEBPACK_IMPORTED_MODULE_19_fusioncharts_fusioncharts_widgets__, __WEBPACK_IMPORTED_MODULE_21_fusioncharts_themes_fusioncharts_theme_fusion__);
+var AppModule = (function () {
+    function AppModule() {
+    }
+    return AppModule;
+}());
+AppModule = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */],
+            __WEBPACK_IMPORTED_MODULE_10__dashboard_dashboard_component__["a" /* DashboardComponent */],
+            __WEBPACK_IMPORTED_MODULE_11__user_user_component__["a" /* UserComponent */],
+            __WEBPACK_IMPORTED_MODULE_12__table_table_component__["a" /* TableComponent */],
+            __WEBPACK_IMPORTED_MODULE_13__typography_typography_component__["a" /* TypographyComponent */],
+            __WEBPACK_IMPORTED_MODULE_14__icons_icons_component__["a" /* IconsComponent */],
+            __WEBPACK_IMPORTED_MODULE_15__maps_maps_component__["a" /* MapsComponent */],
+            __WEBPACK_IMPORTED_MODULE_16__notifications_notifications_component__["a" /* NotificationsComponent */],
+            __WEBPACK_IMPORTED_MODULE_17__upgrade_upgrade_component__["a" /* UpgradeComponent */]
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* RouterModule */].forRoot(__WEBPACK_IMPORTED_MODULE_4__app_routing__["a" /* AppRoutes */]),
+            __WEBPACK_IMPORTED_MODULE_5__sidebar_sidebar_module__["a" /* SidebarModule */],
+            __WEBPACK_IMPORTED_MODULE_20_angular_fusioncharts__["a" /* FusionChartsModule */],
+            // AmChartsModule,
+            // ProgressBarModule,
+            __WEBPACK_IMPORTED_MODULE_7__shared_navbar_navbar_module__["a" /* NavbarModule */],
+            __WEBPACK_IMPORTED_MODULE_6__shared_footer_footer_module__["a" /* FooterModule */],
+            __WEBPACK_IMPORTED_MODULE_8__shared_fixedplugin_fixedplugin_module__["a" /* FixedPluginModule */],
+            __WEBPACK_IMPORTED_MODULE_9__ngui_map__["NguiMapModule"].forRoot({ apiUrl: 'https://maps.google.com/maps/api/js?key=AIzaSyDpnW-2zT7G42Gl42JPmzNlri7Qujp3uOE' }),
+        ],
+        providers: [],
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */]]
+    })
+], AppModule);
+
+//# sourceMappingURL=app.module.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/app.routing.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppRoutes; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dashboard_dashboard_component__ = __webpack_require__("../../../../../src/app/dashboard/dashboard.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__user_user_component__ = __webpack_require__("../../../../../src/app/user/user.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__table_table_component__ = __webpack_require__("../../../../../src/app/table/table.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__typography_typography_component__ = __webpack_require__("../../../../../src/app/typography/typography.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__icons_icons_component__ = __webpack_require__("../../../../../src/app/icons/icons.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__maps_maps_component__ = __webpack_require__("../../../../../src/app/maps/maps.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__notifications_notifications_component__ = __webpack_require__("../../../../../src/app/notifications/notifications.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__upgrade_upgrade_component__ = __webpack_require__("../../../../../src/app/upgrade/upgrade.component.ts");
+
+
+
+
+
+
+
+
+var AppRoutes = [
+    {
+        path: '',
+        redirectTo: 'dashboard',
+        pathMatch: 'full',
+    },
+    {
+        path: 'dashboard',
+        component: __WEBPACK_IMPORTED_MODULE_0__dashboard_dashboard_component__["a" /* DashboardComponent */]
+    },
+    {
+        path: 'user',
+        component: __WEBPACK_IMPORTED_MODULE_1__user_user_component__["a" /* UserComponent */]
+    },
+    {
+        path: 'table',
+        component: __WEBPACK_IMPORTED_MODULE_2__table_table_component__["a" /* TableComponent */]
+    },
+    {
+        path: 'typography',
+        component: __WEBPACK_IMPORTED_MODULE_3__typography_typography_component__["a" /* TypographyComponent */]
+    },
+    {
+        path: 'icons',
+        component: __WEBPACK_IMPORTED_MODULE_4__icons_icons_component__["a" /* IconsComponent */]
+    },
+    {
+        path: 'maps',
+        component: __WEBPACK_IMPORTED_MODULE_5__maps_maps_component__["a" /* MapsComponent */]
+    },
+    {
+        path: 'notifications',
+        component: __WEBPACK_IMPORTED_MODULE_6__notifications_notifications_component__["a" /* NotificationsComponent */]
+    },
+    {
+        path: 'upgrade',
+        component: __WEBPACK_IMPORTED_MODULE_7__upgrade_upgrade_component__["a" /* UpgradeComponent */]
+    }
+];
+//# sourceMappingURL=app.routing.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/dashboard/dashboard.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container-fluid dashboard\">\n    <div class=\"row\">\n        <div class=\"col-lg-2 col-sm-12\">\n            <div class=\"card\">\n                <div class=\"content customcontent\">\n                    <div class=\"row\">\n                        <div class=\"col-xs-7 customNumbers\">\n                            <div class=\"numbers\">\n                                <p>ALERTS</p>\n\n                            </div>\n                        </div>\n                        <div class=\"col-xs-5 customicons\">\n\n                            <img src=\"../../assets/img/alert.svg\" alt=\"\">\n\n                        </div>\n                        <div class=\"customNumber\">\n                            <h2 class=\"customH1\">24</h2>\n                        </div>\n                    </div>\n\n                </div>\n            </div>\n        </div>\n\n        <div class=\"col-lg-10 col-sm-12\">\n            <div class=\"card\">\n                <div class=\"content customcontent\">\n                    <div class=\"row\">\n                        <div class=\"col-xs-7 customNumbers\">\n                            <div class=\"numbers\">\n                                <p>ALERTS</p>\n\n                            </div>\n                        </div>\n                        <div class=\"col-xs-5 customicons\">\n\n                            <img src=\"../../assets/img/truck.svg\" alt=\"\">\n\n                        </div>\n                        <table class=\"table customtable1\">\n                            <tr>\n                                <td style=\"width: 20%\">\n                                    <p class=\"customheaderp\">06\n                                        <br>\n                                        <span class=\"customspan\">Accidents</span>\n                                    </p>\n                                </td>\n                                <td style=\"        width: 47%;\n                                border-right: 1px silid slategrey;\n                                padding-right: 8%;\">\n                                    <p>Total Incidents\n                                        <span class=\"linegraph1\"> ---------------------------------------------------------------------</span> 100\n                                    </p>\n                                    <p>Open Incidents\n                                        <span class=\"linegraph2\"> --------------------------------------------------</span> 90 </p>\n                                    <p>Work in Progress\n                                        <span class=\"linegraph3\"> ---------------------------------------</span> 50 </p>\n                                </td>\n                                <td style=\"border-left: 1px solid #d4d4d4 !important;    padding-left: 6%;\n                                padding-right: 14%;\">\n                                    <p>\n                                        New Incident Raised @ Electronic City Cross Traffic Signal\n                                    </p>\n                                </td>\n                            </tr>\n                        </table>\n\n                    </div>\n\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"row\">\n\n        <div class=\"col-md-6 col-lg-2 col-sm-12\">\n            <div class=\"card\">\n                <div class=\"content\">\n                    <div class=\"row\">\n                        <div class=\"col-xs-12 col-lg-12\">\n                            <div class=\"numbers\">\n                                <p>WASTE MANAGEMENT (Kg)</p>\n\n                            </div>\n                            <table class=\"table customtable1 customtable2\">\n                                <tr>\n                                    <td>\n                                        <p>\n                                            <span class=\"customspan1\">542</span>\n                                            <br>\n                                            <span class=\"customspan2\">Wet</span>\n                                        </p>\n                                    </td>\n                                    <td>\n                                        <p>\n                                            <span class=\"customspan1\">542</span>\n                                            <br>\n                                            <span class=\"customspan2\">Dry</span>\n                                        </p>\n                                    </td>\n                                </tr>\n                                <tr>\n                                    <td>\n                                        <p>\n                                            <span class=\"customspan1\">542</span>\n                                            <br>\n                                            <span class=\"customspan2\">Recycled</span>\n                                        </p>\n                                    </td>\n                                    <td>\n                                        <p>\n                                            <span class=\"customspan1\">542</span>\n                                            <br>\n                                            <span class=\"customspan2\">Rejected</span>\n                                        </p>\n                                    </td>\n                                </tr>\n                                <tr>\n                                    <td>\n                                        <p>\n                                            <span class=\"customspan1\">542</span>\n                                            <br>\n                                            <span class=\"customspan2\">Collected</span>\n                                        </p>\n                                    </td>\n                                    <td>\n                                        <p>\n                                            <span class=\"customspan1\">542</span>\n                                            <br>\n                                            <span class=\"customspan2\">Not Collected</span>\n                                        </p>\n                                    </td>\n                                </tr>\n                                <tr>\n                                    <td colspan=\"2\"></td>\n                                </tr>\n                            </table>\n                        </div>\n\n\n                    </div>\n\n                </div>\n            </div>\n        </div>\n        <div class=\"col-md-6 col-lg-2 col-sm-12\">\n            <div class=\"card\">\n                <div class=\"content\">\n                    <div class=\"row\">\n                        <div class=\"col-xs-12 col-lg-12\">\n                            <div class=\"numbers\">\n                                <p>WASTE MANAGEMENT (Ltr)</p>\n\n                            </div>\n                            <table class=\"table customtable1 customtable2\" style=\" margin-top: 15% !important;\">\n                                <tr>\n                                    <td>\n                                        <p>\n                                            <span class=\"customspan1\">542</span>\n                                            <br>\n                                            <span class=\"customspan2\">Industry</span>\n                                        </p>\n                                    </td>\n                                    <td>\n                                        <p>\n                                            <span class=\"customspan1\">542</span>\n                                            <br>\n                                            <span class=\"customspan2\">Domestic</span>\n                                        </p>\n                                    </td>\n                                </tr>\n                                <tr>\n                                    <td colspan=\"2\" style=\"text-align: center;\">\n                                        <img src=\"../../assets/img/graph1.svg\" alt=\"\">\n                                        <!-- <div id=\"chartdiv\" [style.width.%]=\"100\" [style.height.px]=\"55\"></div> -->\n\n                                        <!-- <fusioncharts width=\"700\" height=\"400\" type=\"Column2d\" [dataSource]=\"dataSource\">\n                                        </fusioncharts> -->\n                                        <!-- <fusioncharts\n                                        width=\"200\"\n                                        height=\"150\"\n                                        type=\"AngularGauge\"\n                                        [dataSource]=\"dataSource\">\n                                    </fusioncharts> -->\n                                        <br>\n                                        <p>MONTHLY CONSUMPTION</p>\n\n                                    </td>\n\n                                </tr>\n                                <tr>\n                                    <td colspan=\"2\"></td>\n                                </tr>\n\n                            </table>\n\n                        </div>\n\n\n                    </div>\n\n                </div>\n            </div>\n        </div>\n        <div class=\"col-md-6 col-lg-2 col-sm-12\">\n            <div class=\"card\">\n                <div class=\"content\">\n                    <div class=\"row\">\n                        <div class=\"col-xs-12 col-lg-12\">\n                            <div class=\"numbers\">\n                                <p>PARKING</p>\n\n                            </div>\n                            <div class=\"col-xs-5 customicons\">\n\n                                <img src=\"../../assets/img/parking.svg\" alt=\"\">\n\n                            </div>\n                            <table class=\"table customtable1 customtable2\">\n                                <tr>\n                                    <td>\n                                        <p>\n                                            <span class=\"customspan1\">542</span>\n                                            <br>\n                                            <span class=\"customspan2\">Available</span>\n                                        </p>\n                                    </td>\n                                    <td>\n                                        <p>\n                                            <span class=\"customspan1\">542</span>\n                                            <br>\n                                            <span class=\"customspan2\">Occupied</span>\n                                        </p>\n                                    </td>\n                                </tr>\n                                <tr>\n                                    <td colspan=\"2\"></td>\n                                </tr>\n\n                            </table>\n                        </div>\n\n\n                    </div>\n\n                </div>\n            </div>\n            <div class=\"card\" style=\"    margin-top: 3%;\">\n                <div class=\"content\">\n                    <div class=\"row\">\n                        <div class=\"col-xs-12 col-lg-12\">\n                            <div class=\"numbers\">\n                                <p>FLEET MANAGEMENT</p>\n\n                            </div>\n                            <div class=\"col-xs-5 customicons\">\n\n                                <img src=\"../../assets/img/envt.svg\" alt=\"\">\n\n                            </div>\n                            <table class=\"table customtable1 customtable2\">\n                                <tr>\n                                    <td>\n                                        <p>\n                                            <span class=\"customspan1\">542</span>\n                                            <br>\n                                            <span class=\"customspan2\">Industry</span>\n                                        </p>\n                                    </td>\n                                    <td>\n                                        <p>\n                                            <span class=\"customspan1\">542</span>\n                                            <br>\n                                            <span class=\"customspan2\">Domestic</span>\n                                        </p>\n                                    </td>\n                                </tr>\n                                <tr>\n                                    <td colspan=\"2\"></td>\n                                </tr>\n                                <tr>\n                                    <td colspan=\"2\"></td>\n                                </tr>\n\n\n                            </table>\n                        </div>\n\n\n                    </div>\n\n                </div>\n            </div>\n        </div>\n        <div class=\"col-md-6 col-lg-2 col-sm-12\">\n            <div class=\"card\">\n                <div class=\"content\">\n                    <div class=\"row\">\n                        <div class=\"col-xs-12 col-lg-12\">\n                            <div class=\"numbers\">\n                                <p>FLEET MANAGEMENT</p>\n\n                            </div>\n                            <div class=\"col-xs-5 customicons\">\n\n                                <img src=\"../../assets/img/car.svg\" alt=\"\">\n\n                            </div>\n                            <table class=\"table customtable1 customtable2\">\n                                <tr>\n                                    <td>\n                                        <p>\n                                            <span class=\"customspan1\">542</span>\n                                            <br>\n                                            <span class=\"customspan2\">Industry</span>\n                                        </p>\n                                    </td>\n                                    <td>\n                                        <p>\n                                            <span class=\"customspan1\">542</span>\n                                            <br>\n                                            <span class=\"customspan2\">Domestic</span>\n                                        </p>\n                                    </td>\n                                </tr>\n                                <tr>\n                                    <td colspan=\"2\"></td>\n                                </tr>\n\n\n                            </table>\n                        </div>\n\n\n                    </div>\n\n                </div>\n            </div>\n            <div class=\"card\" style=\"    margin-top: 3%;height: 175px;\">\n                <div class=\"content\">\n                    <div class=\"row\">\n                        <div class=\"col-xs-12 col-lg-12\">\n                            <div class=\"numbers\">\n                                <p>ENERGY CONSUMPTION</p>\n\n                            </div>\n                            <div class=\"col-xs-5 customicons\">\n\n                                <img src=\"../../assets/img/parking.svg\" alt=\"\">\n\n                            </div>\n                            <table class=\"table customtable1 customtable2\">\n                                <tr>\n                                    <td colspan=\"2\">\n                                        <p>\n                                            <span class=\"customspan1\">542</span>\n                                            <br>\n                                            <span class=\"customspan2\">Threshold</span>\n                                        </p>\n                                    </td>\n\n                                </tr>\n                                <tr>\n                                    <td colspan=\"2\"></td>\n                                </tr>\n\n                            </table>\n                        </div>\n\n\n                    </div>\n\n                </div>\n            </div>\n        </div>\n        <div class=\"col-md-6 col-lg-4 col-sm-12\">\n            <div class=\"card\" style=\"    height: 335px;\">\n                <div class=\"content\">\n                    <div class=\"row\">\n                        <div class=\"col-xs-7\">\n                            <div class=\"numbers\">\n                                <p>SOCIAL MEDIA</p>\n\n                            </div>\n                        </div>\n                        <table class=\"table customtable1\">\n                            <tr>\n                                <td>\n                                    <p style=\"text-align: left !important;\">\n                                        Contests are a great thing to partner on. Partnerships immediately #DOUBLE the reach. - John Doe Contests are a great thing\n                                        to partner on. Partnerships immediately #DOUBLE the reach. - John Doe Contests are\n                                        a great thing to partner on. Partnerships immediately #DOUBLE the reach. - John Doe\n                                        a great thing to partner on. Partnerships immediately #DOUBLE the reach. - John Doe\n                                        Contests are a great thing to partner on. Partnerships immediately #DOUBLE the reach.\n                                        - John Doe\n                                    </p>\n                                </td>\n                                <td style=\"text-align: left !important;\">\n                                    <img src=\"../../assets/img/twitter.png\" alt=\"\">\n                                </td>\n                            </tr>\n                            <tr>\n                                <td>\n                                    <p style=\"text-align: left !important;\">\n                                        Are there #common-sense facts related to your business? Combine them with a great photo. Are there #common-sense facts related\n                                        to your business? Combine them with a great photo. Are there #common-sense facts\n                                        related to your business? Combine them with a great photo. Are there #common-sense\n                                        facts related to your business? Combine them with a great photo.\n\n                                    </p>\n                                </td>\n                                <td style=\"text-align: left;\">\n                                    <img src=\"../../assets/img/facebook.svg\" alt=\"\">\n                                </td>\n                            </tr>\n                            <tr>\n                                <td colspan=\"2\"></td>\n                            </tr>\n\n                        </table>\n\n\n                    </div>\n\n                </div>\n            </div>\n        </div>\n\n\n    </div>\n\n    <div class=\"row\">\n        <div class=\"col-lg-2 col-sm-12\">\n            <div class=\"card\">\n                <div class=\"content customcontent\">\n                    <div class=\"row\">\n                        <div class=\"col-xs-7 customNumbers\">\n                            <div class=\"numbers\">\n                                <p>E - TOILET</p>\n\n                            </div>\n                        </div>\n                        <div class=\"col-xs-5 customicons\">\n\n                            <img src=\"../../assets/img/toilet.svg\" alt=\"\">\n\n                        </div>\n                        <div class=\"customNumber\">\n                            <h2 class=\"customH1\">24</h2>\n                        </div>\n                    </div>\n\n                </div>\n            </div>\n        </div>\n        <div class=\"col-lg-2 col-sm-12\">\n            <div class=\"card\">\n                <div class=\"content customcontent\">\n                    <div class=\"row\">\n                        <div class=\"col-xs-7 customNumbers\">\n                            <div class=\"numbers\">\n                                <p>CCTV SURVEILANCE</p>\n\n                            </div>\n                        </div>\n                        <div class=\"col-xs-5 customicons\">\n\n                            <img src=\"../../assets/img/cc.svg\" alt=\"\">\n\n                        </div>\n                        <div class=\"customNumber\">\n                            <h2 class=\"customH1\">24</h2>\n                        </div>\n                    </div>\n\n                </div>\n            </div>\n        </div>\n        <div class=\"col-md-6 col-lg-2 col-sm-12\">\n            <div class=\"card\">\n                <div class=\"content customcontent\">\n                    <div class=\"row\">\n                        <div class=\"col-xs-7 customNumbers\">\n                            <div class=\"numbers\">\n                                <p>TRAFFIC SIGNALS</p>\n\n                            </div>\n                        </div>\n\n                        <table class=\"table customtable1 customtable2\" style=\"    margin-top: 11% !important;\">\n                            <tr>\n                                <td>\n                                    <p>\n                                        <span class=\"customspan1\">542</span>\n                                        <br>\n                                        <span class=\"customspan2\">Working</span>\n                                    </p>\n                                </td>\n                                <td>\n                                    <p>\n                                        <span class=\"customspan1\">542</span>\n                                        <br>\n                                        <span class=\"customspan2\">Not Working</span>\n                                    </p>\n                                </td>\n                            </tr>\n\n                        </table>\n                    </div>\n\n\n                </div>\n\n            </div>\n        </div>\n        <div class=\"col-lg-2 col-sm-12\">\n            <div class=\"card\">\n                <div class=\"content customcontent\">\n                    <div class=\"row\">\n                        <div class=\"col-xs-7 customNumbers\">\n                            <div class=\"numbers\">\n                                <p>STREET LIGHTS</p>\n\n                            </div>\n                        </div>\n                        <div class=\"col-xs-5 customicons\">\n\n                            <img src=\"../../assets/img/cctvser.svg\" alt=\"\">\n\n                        </div>\n                        <table class=\"table customtable1 customtable2\" style=\"    margin-top: 11% !important;\">\n                            <tr>\n                                <td>\n                                    <p>\n                                        <span class=\"customspan1\">542</span>\n                                        <br>\n                                        <span class=\"customspan2\">ON</span>\n                                    </p>\n                                </td>\n                                <td>\n                                    <p>\n                                        <span class=\"customspan1\">542</span>\n                                        <br>\n                                        <span class=\"customspan2\">OFF</span>\n                                    </p>\n                                </td>\n                            </tr>\n\n\n                        </table>\n                    </div>\n\n                </div>\n            </div>\n        </div>\n        <div class=\"col-md-6 col-lg-4 col-sm-12\">\n            <div class=\"card\" style=\"    height: 161px;\">\n                <div class=\"content\">\n                    <div class=\"row\">\n                        <div class=\"col-xs-7 customNumbers\">\n                            <div class=\"numbers\">\n                                <p>NEWS FEED</p>\n\n                            </div>\n                        </div>\n                        <table class=\"table customtable1\">\n                            <tr>\n                                <td>\n                                    <p style=\"text-align: left !important;\">\n                                        Contests are a great thing to partner on. Partnerships immediately #DOUBLE the reach. - John Doe\n                                    </p>\n                                </td>\n                                <td style=\"text-align: left !important;\">\n                                    <img src=\"../../assets/img/twitter.png\" alt=\"\">\n                                </td>\n                            </tr>\n                            <tr>\n                                <td>\n                                    <p style=\"text-align: left !important;\">\n                                        Are there #common-sense facts related to your business? Combine them with a great photo.\n\n\n                                    </p>\n                                </td>\n                                <td style=\"text-align: left;\">\n                                    <img src=\"../../assets/img/facebook.svg\" alt=\"\">\n                                </td>\n                            </tr>\n\n\n                        </table>\n\n                    </div>\n\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col-lg-4 col-sm-12\">\n            <div class=\"card\">\n                <div class=\"content\">\n                    <div class=\"row\">\n                        <div class=\"col-xs-7\">\n                            <div class=\"numbers\">\n                                <p>TRANSPORT SYSTEM</p>\n\n                            </div>\n                        </div>\n                        <div class=\"col-xs-5 customicons\">\n\n                            <img src=\"../../assets/img/train.svg\" alt=\"\">\n\n                        </div>\n                        <table class=\"table customtable1 customtable2\">\n                            <tr>\n                                <td>\n                                    <p>\n                                        <span class=\"customspan1\">542</span>\n                                        <br>\n                                        <span class=\"customspan2\">Metro</span>\n                                    </p>\n                                </td>\n                                <td>\n                                    <p>\n                                        <span class=\"customspan1\">542</span>\n                                        <br>\n                                        <span class=\"customspan2\">City Bus</span>\n                                    </p>\n                                </td>\n                                <td>\n                                    <p>\n                                        <span class=\"customspan1\">542</span>\n                                        <br>\n                                        <span class=\"customspan2\">Private Taxi</span>\n                                    </p>\n                                </td>\n                                <td>\n                                    <p>\n                                        <span class=\"customspan1\">542</span>\n                                        <br>\n                                        <span class=\"customspan2\">Flights</span>\n                                    </p>\n                                </td>\n                            </tr>\n\n                        </table>\n\n                    </div>\n\n                </div>\n            </div>\n        </div>\n\n        <div class=\"col-lg-8 col-sm-12\">\n            <div class=\"card\">\n                <div class=\"content\">\n                    <div class=\"row\">\n\n                        <div class=\"col-xs-5 customicons\">\n\n                            <img src=\"../../assets/img/cc.svg\" alt=\"\">\n\n                        </div>\n                        <table class=\"table customtable1 customcctv\" style=\"    margin-top: 0% !important;\">\n                            <tr>\n                                <td>\n                                    <img src=\"../../assets/img/cctv2.png\" alt=\"\">\n                                </td>\n                                <td>\n                                    <img src=\"../../assets/img/cctv2.png\" alt=\"\">\n                                </td>\n                                <td>\n                                    <img src=\"../../assets/img/cctv2.png\" alt=\"\">\n                                </td>\n                                <td>\n                                    <img src=\"../../assets/img/cctv2.png\" alt=\"\">\n                                </td>\n                            </tr>\n\n                        </table>\n\n                    </div>\n\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/dashboard/dashboard.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DashboardComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var DashboardComponent = (function () {
+    function DashboardComponent() {
+    }
+    DashboardComponent.prototype.ngOnInit = function () {
+    };
+    return DashboardComponent;
+}());
+DashboardComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'dashboard-cmp',
+        template: __webpack_require__("../../../../../src/app/dashboard/dashboard.component.html")
+    })
+], DashboardComponent);
+
+//# sourceMappingURL=dashboard.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/icons/icons.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "    <div class=\"container-fluid\">\n        <div class=\"row\">\n            <div class=\"col-md-12\">\n                <div class=\"card\">\n                    <div class=\"header\">\n                        <h4 class=\"title\">320+ Themify Icons</h4>\n                        <p class=\"category\">Handcrafted by our friends from <a target=\"_blank\" href=\"https://themify.me/\">Themify</a>.</p>\n                    </div>\n                    <div class=\"content all-icons\">\n\n                        <div class=\"icon-section\">\n                            <h3>Arrows &amp; Direction Icons </h3>\n\n                            <div class=\"icon-container\">\n                                <span class=\"ti-arrow-up\"></span><span class=\"icon-name\"> ti-arrow-up</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-arrow-right\"></span><span class=\"icon-name\"> ti-arrow-right</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-arrow-left\"></span><span class=\"icon-name\"> ti-arrow-left</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-arrow-down\"></span><span class=\"icon-name\"> ti-arrow-down</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-arrows-vertical\"></span><span class=\"icon-name\"> ti-arrows-vertical</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-arrows-horizontal\"></span><span class=\"icon-name\"> ti-arrows-horizontal</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-angle-up\"></span><span class=\"icon-name\"> ti-angle-up</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-angle-right\"></span><span class=\"icon-name\"> ti-angle-right</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-angle-left\"></span><span class=\"icon-name\"> ti-angle-left</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-angle-down\"></span><span class=\"icon-name\"> ti-angle-down</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-angle-double-up\"></span><span class=\"icon-name\"> ti-angle-double-up</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-angle-double-right\"></span><span class=\"icon-name\"> ti-angle-double-right</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-angle-double-left\"></span><span class=\"icon-name\"> ti-angle-double-left</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-angle-double-down\"></span><span class=\"icon-name\"> ti-angle-double-down</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-move\"></span><span class=\"icon-name\"> ti-move</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-fullscreen\"></span><span class=\"icon-name\"> ti-fullscreen</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-arrow-top-right\"></span><span class=\"icon-name\"> ti-arrow-top-right</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-arrow-top-left\"></span><span class=\"icon-name\"> ti-arrow-top-left</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-arrow-circle-up\"></span><span class=\"icon-name\"> ti-arrow-circle-up</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-arrow-circle-right\"></span><span class=\"icon-name\"> ti-arrow-circle-right</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-arrow-circle-left\"></span><span class=\"icon-name\"> ti-arrow-circle-left</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-arrow-circle-down\"></span><span class=\"icon-name\"> ti-arrow-circle-down</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-arrows-corner\"></span><span class=\"icon-name\"> ti-arrows-corner</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-split-v\"></span><span class=\"icon-name\"> ti-split-v</span>\n                            </div>\n\n                            <div class=\"icon-container\">\n                                <span class=\"ti-split-v-alt\"></span><span class=\"icon-name\"> ti-split-v-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-split-h\"></span><span class=\"icon-name\"> ti-split-h</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-hand-point-up\"></span><span class=\"icon-name\"> ti-hand-point-up</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-hand-point-right\"></span><span class=\"icon-name\"> ti-hand-point-right</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-hand-point-left\"></span><span class=\"icon-name\"> ti-hand-point-left</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-hand-point-down\"></span><span class=\"icon-name\"> ti-hand-point-down</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-back-right\"></span><span class=\"icon-name\"> ti-back-right</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-back-left\"></span><span class=\"icon-name\"> ti-back-left</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-exchange-vertical\"></span><span class=\"icon-name\"> ti-exchange-vertical</span>\n                            </div>\n\n                        </div> <!-- Arrows Icons -->\n\n\n\n                        <h3>Web App Icons</h3>\n\n                        <div class=\"icon-section\">\n\n                            <div class=\"icon-container\">\n                                <span class=\"ti-wand\"></span><span class=\"icon-name\"> ti-wand</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-save\"></span><span class=\"icon-name\"> ti-save</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-save-alt\"></span><span class=\"icon-name\"> ti-save-alt</span>\n                            </div>\n\n                            <div class=\"icon-container\">\n                                <span class=\"ti-direction\"></span><span class=\"icon-name\"> ti-direction</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-direction-alt\"></span><span class=\"icon-name\"> ti-direction-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-user\"></span><span class=\"icon-name\"> ti-user</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-link\"></span><span class=\"icon-name\"> ti-link</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-unlink\"></span><span class=\"icon-name\"> ti-unlink</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-trash\"></span><span class=\"icon-name\"> ti-trash</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-target\"></span><span class=\"icon-name\"> ti-target</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-tag\"></span><span class=\"icon-name\"> ti-tag</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-desktop\"></span><span class=\"icon-name\"> ti-desktop</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-tablet\"></span><span class=\"icon-name\"> ti-tablet</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-mobile\"></span><span class=\"icon-name\"> ti-mobile</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-email\"></span><span class=\"icon-name\"> ti-email</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-star\"></span><span class=\"icon-name\"> ti-star</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-spray\"></span><span class=\"icon-name\"> ti-spray</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-signal\"></span><span class=\"icon-name\"> ti-signal</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-shopping-cart\"></span><span class=\"icon-name\"> ti-shopping-cart</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-shopping-cart-full\"></span><span class=\"icon-name\"> ti-shopping-cart-full</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-settings\"></span><span class=\"icon-name\"> ti-settings</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-search\"></span><span class=\"icon-name\"> ti-search</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-zoom-in\"></span><span class=\"icon-name\"> ti-zoom-in</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-zoom-out\"></span><span class=\"icon-name\"> ti-zoom-out</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-cut\"></span><span class=\"icon-name\"> ti-cut</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-ruler\"></span><span class=\"icon-name\"> ti-ruler</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-ruler-alt-2\"></span><span class=\"icon-name\"> ti-ruler-alt-2</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-ruler-pencil\"></span><span class=\"icon-name\"> ti-ruler-pencil</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-ruler-alt\"></span><span class=\"icon-name\"> ti-ruler-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-bookmark\"></span><span class=\"icon-name\"> ti-bookmark</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-bookmark-alt\"></span><span class=\"icon-name\"> ti-bookmark-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-reload\"></span><span class=\"icon-name\"> ti-reload</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-plus\"></span><span class=\"icon-name\"> ti-plus</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-minus\"></span><span class=\"icon-name\"> ti-minus</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-close\"></span><span class=\"icon-name\"> ti-close</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-pin\"></span><span class=\"icon-name\"> ti-pin</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-pencil\"></span><span class=\"icon-name\"> ti-pencil</span>\n                            </div>\n\n                            <div class=\"icon-container\">\n                                <span class=\"ti-pencil-alt\"></span><span class=\"icon-name\"> ti-pencil-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-paint-roller\"></span><span class=\"icon-name\"> ti-paint-roller</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-paint-bucket\"></span><span class=\"icon-name\"> ti-paint-bucket</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-na\"></span><span class=\"icon-name\"> ti-na</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-medall\"></span><span class=\"icon-name\"> ti-medall</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-medall-alt\"></span><span class=\"icon-name\"> ti-medall-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-marker\"></span><span class=\"icon-name\"> ti-marker</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-marker-alt\"></span><span class=\"icon-name\"> ti-marker-alt</span>\n                            </div>\n\n                            <div class=\"icon-container\">\n                                <span class=\"ti-lock\"></span><span class=\"icon-name\"> ti-lock</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-unlock\"></span><span class=\"icon-name\"> ti-unlock</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-location-arrow\"></span><span class=\"icon-name\"> ti-location-arrow</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout\"></span><span class=\"icon-name\"> ti-layout</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layers\"></span><span class=\"icon-name\"> ti-layers</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layers-alt\"></span><span class=\"icon-name\"> ti-layers-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-key\"></span><span class=\"icon-name\"> ti-key</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-image\"></span><span class=\"icon-name\"> ti-image</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-heart\"></span><span class=\"icon-name\"> ti-heart</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-heart-broken\"></span><span class=\"icon-name\"> ti-heart-broken</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-hand-stop\"></span><span class=\"icon-name\"> ti-hand-stop</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-hand-open\"></span><span class=\"icon-name\"> ti-hand-open</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-hand-drag\"></span><span class=\"icon-name\"> ti-hand-drag</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-flag\"></span><span class=\"icon-name\"> ti-flag</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-flag-alt\"></span><span class=\"icon-name\"> ti-flag-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-flag-alt-2\"></span><span class=\"icon-name\"> ti-flag-alt-2</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-eye\"></span><span class=\"icon-name\"> ti-eye</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-import\"></span><span class=\"icon-name\"> ti-import</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-export\"></span><span class=\"icon-name\"> ti-export</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-cup\"></span><span class=\"icon-name\"> ti-cup</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-crown\"></span><span class=\"icon-name\"> ti-crown</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-comments\"></span><span class=\"icon-name\"> ti-comments</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-comment\"></span><span class=\"icon-name\"> ti-comment</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-comment-alt\"></span><span class=\"icon-name\"> ti-comment-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-thought\"></span><span class=\"icon-name\"> ti-thought</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-clip\"></span><span class=\"icon-name\"> ti-clip</span>\n                            </div>\n\n                            <div class=\"icon-container\">\n                                <span class=\"ti-check\"></span><span class=\"icon-name\"> ti-check</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-check-box\"></span><span class=\"icon-name\"> ti-check-box</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-camera\"></span><span class=\"icon-name\"> ti-camera</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-announcement\"></span><span class=\"icon-name\"> ti-announcement</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-brush\"></span><span class=\"icon-name\"> ti-brush</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-brush-alt\"></span><span class=\"icon-name\"> ti-brush-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-palette\"></span><span class=\"icon-name\"> ti-palette</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-briefcase\"></span><span class=\"icon-name\"> ti-briefcase</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-bolt\"></span><span class=\"icon-name\"> ti-bolt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-bolt-alt\"></span><span class=\"icon-name\"> ti-bolt-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-blackboard\"></span><span class=\"icon-name\"> ti-blackboard</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-bag\"></span><span class=\"icon-name\"> ti-bag</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-world\"></span><span class=\"icon-name\"> ti-world</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-wheelchair\"></span><span class=\"icon-name\"> ti-wheelchair</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-car\"></span><span class=\"icon-name\"> ti-car</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-truck\"></span><span class=\"icon-name\"> ti-truck</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-timer\"></span><span class=\"icon-name\"> ti-timer</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-ticket\"></span><span class=\"icon-name\"> ti-ticket</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-thumb-up\"></span><span class=\"icon-name\"> ti-thumb-up</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-thumb-down\"></span><span class=\"icon-name\"> ti-thumb-down</span>\n                            </div>\n\n                            <div class=\"icon-container\">\n                                <span class=\"ti-stats-up\"></span><span class=\"icon-name\"> ti-stats-up</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-stats-down\"></span><span class=\"icon-name\"> ti-stats-down</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-shine\"></span><span class=\"icon-name\"> ti-shine</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-shift-right\"></span><span class=\"icon-name\"> ti-shift-right</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-shift-left\"></span><span class=\"icon-name\"> ti-shift-left</span>\n                            </div>\n\n                            <div class=\"icon-container\">\n                                <span class=\"ti-shift-right-alt\"></span><span class=\"icon-name\"> ti-shift-right-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-shift-left-alt\"></span><span class=\"icon-name\"> ti-shift-left-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-shield\"></span><span class=\"icon-name\"> ti-shield</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-notepad\"></span><span class=\"icon-name\"> ti-notepad</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-server\"></span><span class=\"icon-name\"> ti-server</span>\n                            </div>\n\n                            <div class=\"icon-container\">\n                                <span class=\"ti-pulse\"></span><span class=\"icon-name\"> ti-pulse</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-printer\"></span><span class=\"icon-name\"> ti-printer</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-power-off\"></span><span class=\"icon-name\"> ti-power-off</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-plug\"></span><span class=\"icon-name\"> ti-plug</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-pie-chart\"></span><span class=\"icon-name\"> ti-pie-chart</span>\n                            </div>\n\n                            <div class=\"icon-container\">\n                                <span class=\"ti-panel\"></span><span class=\"icon-name\"> ti-panel</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-package\"></span><span class=\"icon-name\"> ti-package</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-music\"></span><span class=\"icon-name\"> ti-music</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-music-alt\"></span><span class=\"icon-name\"> ti-music-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-mouse\"></span><span class=\"icon-name\"> ti-mouse</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-mouse-alt\"></span><span class=\"icon-name\"> ti-mouse-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-money\"></span><span class=\"icon-name\"> ti-money</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-microphone\"></span><span class=\"icon-name\"> ti-microphone</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-menu\"></span><span class=\"icon-name\"> ti-menu</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-menu-alt\"></span><span class=\"icon-name\"> ti-menu-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-map\"></span><span class=\"icon-name\"> ti-map</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-map-alt\"></span><span class=\"icon-name\"> ti-map-alt</span>\n                            </div>\n\n                            <div class=\"icon-container\">\n                                <span class=\"ti-location-pin\"></span><span class=\"icon-name\"> ti-location-pin</span>\n                            </div>\n\n                            <div class=\"icon-container\">\n                                <span class=\"ti-light-bulb\"></span><span class=\"icon-name\"> ti-light-bulb</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-info\"></span><span class=\"icon-name\"> ti-info</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-infinite\"></span><span class=\"icon-name\"> ti-infinite</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-id-badge\"></span><span class=\"icon-name\"> ti-id-badge</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-hummer\"></span><span class=\"icon-name\"> ti-hummer</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-home\"></span><span class=\"icon-name\"> ti-home</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-help\"></span><span class=\"icon-name\"> ti-help</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-headphone\"></span><span class=\"icon-name\"> ti-headphone</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-harddrives\"></span><span class=\"icon-name\"> ti-harddrives</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-harddrive\"></span><span class=\"icon-name\"> ti-harddrive</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-gift\"></span><span class=\"icon-name\"> ti-gift</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-game\"></span><span class=\"icon-name\"> ti-game</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-filter\"></span><span class=\"icon-name\"> ti-filter</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-files\"></span><span class=\"icon-name\"> ti-files</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-file\"></span><span class=\"icon-name\"> ti-file</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-zip\"></span><span class=\"icon-name\"> ti-zip</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-folder\"></span><span class=\"icon-name\"> ti-folder</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-envelope\"></span><span class=\"icon-name\"> ti-envelope</span>\n                            </div>\n\n\n                            <div class=\"icon-container\">\n                                <span class=\"ti-dashboard\"></span><span class=\"icon-name\"> ti-dashboard</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-cloud\"></span><span class=\"icon-name\"> ti-cloud</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-cloud-up\"></span><span class=\"icon-name\"> ti-cloud-up</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-cloud-down\"></span><span class=\"icon-name\"> ti-cloud-down</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-clipboard\"></span><span class=\"icon-name\"> ti-clipboard</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-calendar\"></span><span class=\"icon-name\"> ti-calendar</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-book\"></span><span class=\"icon-name\"> ti-book</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-bell\"></span><span class=\"icon-name\"> ti-bell</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-basketball\"></span><span class=\"icon-name\"> ti-basketball</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-bar-chart\"></span><span class=\"icon-name\"> ti-bar-chart</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-bar-chart-alt\"></span><span class=\"icon-name\"> ti-bar-chart-alt</span>\n                            </div>\n\n\n                            <div class=\"icon-container\">\n                                <span class=\"ti-archive\"></span><span class=\"icon-name\"> ti-archive</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-anchor\"></span><span class=\"icon-name\"> ti-anchor</span>\n                            </div>\n\n                            <div class=\"icon-container\">\n                                <span class=\"ti-alert\"></span><span class=\"icon-name\"> ti-alert</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-alarm-clock\"></span><span class=\"icon-name\"> ti-alarm-clock</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-agenda\"></span><span class=\"icon-name\"> ti-agenda</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-write\"></span><span class=\"icon-name\"> ti-write</span>\n                            </div>\n\n                            <div class=\"icon-container\">\n                                <span class=\"ti-wallet\"></span><span class=\"icon-name\"> ti-wallet</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-video-clapper\"></span><span class=\"icon-name\"> ti-video-clapper</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-video-camera\"></span><span class=\"icon-name\"> ti-video-camera</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-vector\"></span><span class=\"icon-name\"> ti-vector</span>\n                            </div>\n\n                            <div class=\"icon-container\">\n                                <span class=\"ti-support\"></span><span class=\"icon-name\"> ti-support</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-stamp\"></span><span class=\"icon-name\"> ti-stamp</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-slice\"></span><span class=\"icon-name\"> ti-slice</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-shortcode\"></span><span class=\"icon-name\"> ti-shortcode</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-receipt\"></span><span class=\"icon-name\"> ti-receipt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-pin2\"></span><span class=\"icon-name\"> ti-pin2</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-pin-alt\"></span><span class=\"icon-name\"> ti-pin-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-pencil-alt2\"></span><span class=\"icon-name\"> ti-pencil-alt2</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-eraser\"></span><span class=\"icon-name\"> ti-eraser</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-more\"></span><span class=\"icon-name\"> ti-more</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-more-alt\"></span><span class=\"icon-name\"> ti-more-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-microphone-alt\"></span><span class=\"icon-name\"> ti-microphone-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-magnet\"></span><span class=\"icon-name\"> ti-magnet</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-line-double\"></span><span class=\"icon-name\"> ti-line-double</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-line-dotted\"></span><span class=\"icon-name\"> ti-line-dotted</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-line-dashed\"></span><span class=\"icon-name\"> ti-line-dashed</span>\n                            </div>\n\n                            <div class=\"icon-container\">\n                                <span class=\"ti-ink-pen\"></span><span class=\"icon-name\"> ti-ink-pen</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-info-alt\"></span><span class=\"icon-name\"> ti-info-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-help-alt\"></span><span class=\"icon-name\"> ti-help-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-headphone-alt\"></span><span class=\"icon-name\"> ti-headphone-alt</span>\n                            </div>\n\n                            <div class=\"icon-container\">\n                                <span class=\"ti-gallery\"></span><span class=\"icon-name\"> ti-gallery</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-face-smile\"></span><span class=\"icon-name\"> ti-face-smile</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-face-sad\"></span><span class=\"icon-name\"> ti-face-sad</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-credit-card\"></span><span class=\"icon-name\"> ti-credit-card</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-comments-smiley\"></span><span class=\"icon-name\"> ti-comments-smiley</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-time\"></span><span class=\"icon-name\"> ti-time</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-share\"></span><span class=\"icon-name\"> ti-share</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-share-alt\"></span><span class=\"icon-name\"> ti-share-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-rocket\"></span><span class=\"icon-name\"> ti-rocket</span>\n                            </div>\n\n                            <div class=\"icon-container\">\n                                <span class=\"ti-new-window\"></span><span class=\"icon-name\"> ti-new-window</span>\n                            </div>\n\n                            <div class=\"icon-container\">\n                                <span class=\"ti-rss\"></span><span class=\"icon-name\"> ti-rss</span>\n                            </div>\n\n                            <div class=\"icon-container\">\n                                <span class=\"ti-rss-alt\"></span><span class=\"icon-name\"> ti-rss-alt</span>\n                            </div>\n\n                        </div><!-- Web App Icons -->\n\n\n                        <div class=\"icon-section\">\n                            <h3>Control Icons</h3>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-control-stop\"></span><span class=\"icon-name\"> ti-control-stop</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-control-shuffle\"></span><span class=\"icon-name\"> ti-control-shuffle</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-control-play\"></span><span class=\"icon-name\"> ti-control-play</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-control-pause\"></span><span class=\"icon-name\"> ti-control-pause</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-control-forward\"></span><span class=\"icon-name\"> ti-control-forward</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-control-backward\"></span><span class=\"icon-name\"> ti-control-backward</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-volume\"></span><span class=\"icon-name\"> ti-volume</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-control-skip-forward\"></span><span class=\"icon-name\"> ti-control-skip-forward</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-control-skip-backward\"></span><span class=\"icon-name\"> ti-control-skip-backward</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-control-record\"></span><span class=\"icon-name\"> ti-control-record</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-control-eject\"></span><span class=\"icon-name\"> ti-control-eject</span>\n                            </div>\n                        </div> <!-- Control Icons -->\n\n\n                        <div class=\"icon-section\">\n                            <h3>Text Editor</h3>\n\n                            <div class=\"icon-container\">\n                                <span class=\"ti-paragraph\"></span><span class=\"icon-name\"> ti-paragraph</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-uppercase\"></span><span class=\"icon-name\"> ti-uppercase</span>\n                            </div>\n\n                            <div class=\"icon-container\">\n                                <span class=\"ti-underline\"></span><span class=\"icon-name\"> ti-underline</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-text\"></span><span class=\"icon-name\"> ti-text</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-Italic\"></span><span class=\"icon-name\"> ti-Italic</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-smallcap\"></span><span class=\"icon-name\"> ti-smallcap</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-list\"></span><span class=\"icon-name\"> ti-list</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-list-ol\"></span><span class=\"icon-name\"> ti-list-ol</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-align-right\"></span><span class=\"icon-name\"> ti-align-right</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-align-left\"></span><span class=\"icon-name\"> ti-align-left</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-align-justify\"></span><span class=\"icon-name\"> ti-align-justify</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-align-center\"></span><span class=\"icon-name\"> ti-align-center</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-quote-right\"></span><span class=\"icon-name\"> ti-quote-right</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-quote-left\"></span><span class=\"icon-name\"> ti-quote-left</span>\n                            </div>\n\n                        </div> <!-- Text Editor -->\n\n\n\n                        <div class=\"icon-section\">\n                            <h3>Layout Icons</h3>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-width-full\"></span><span class=\"icon-name\"> ti-layout-width-full</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-width-default\"></span><span class=\"icon-name\"> ti-layout-width-default</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-width-default-alt\"></span><span class=\"icon-name\"> ti-layout-width-default-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-tab\"></span><span class=\"icon-name\"> ti-layout-tab</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-tab-window\"></span><span class=\"icon-name\"> ti-layout-tab-window</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-tab-v\"></span><span class=\"icon-name\"> ti-layout-tab-v</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-tab-min\"></span><span class=\"icon-name\"> ti-layout-tab-min</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-slider\"></span><span class=\"icon-name\"> ti-layout-slider</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-slider-alt\"></span><span class=\"icon-name\"> ti-layout-slider-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-sidebar-right\"></span><span class=\"icon-name\"> ti-layout-sidebar-right</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-sidebar-none\"></span><span class=\"icon-name\"> ti-layout-sidebar-none</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-sidebar-left\"></span><span class=\"icon-name\"> ti-layout-sidebar-left</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-placeholder\"></span><span class=\"icon-name\"> ti-layout-placeholder</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-menu\"></span><span class=\"icon-name\"> ti-layout-menu</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-menu-v\"></span><span class=\"icon-name\"> ti-layout-menu-v</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-menu-separated\"></span><span class=\"icon-name\"> ti-layout-menu-separated</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-menu-full\"></span><span class=\"icon-name\"> ti-layout-menu-full</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-media-right\"></span><span class=\"icon-name\"> ti-layout-media-right</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-media-right-alt\"></span><span class=\"icon-name\"> ti-layout-media-right-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-media-overlay\"></span><span class=\"icon-name\"> ti-layout-media-overlay</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-media-overlay-alt\"></span><span class=\"icon-name\"> ti-layout-media-overlay-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-media-overlay-alt-2\"></span><span class=\"icon-name\"> ti-layout-media-overlay-alt-2</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-media-left\"></span><span class=\"icon-name\"> ti-layout-media-left</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-media-left-alt\"></span><span class=\"icon-name\"> ti-layout-media-left-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-media-center\"></span><span class=\"icon-name\"> ti-layout-media-center</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-media-center-alt\"></span><span class=\"icon-name\"> ti-layout-media-center-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-list-thumb\"></span><span class=\"icon-name\"> ti-layout-list-thumb</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-list-thumb-alt\"></span><span class=\"icon-name\"> ti-layout-list-thumb-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-list-post\"></span><span class=\"icon-name\"> ti-layout-list-post</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-list-large-image\"></span><span class=\"icon-name\"> ti-layout-list-large-image</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-line-solid\"></span><span class=\"icon-name\"> ti-layout-line-solid</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-grid4\"></span><span class=\"icon-name\"> ti-layout-grid4</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-grid3\"></span><span class=\"icon-name\"> ti-layout-grid3</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-grid2\"></span><span class=\"icon-name\"> ti-layout-grid2</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-grid2-thumb\"></span><span class=\"icon-name\"> ti-layout-grid2-thumb</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-cta-right\"></span><span class=\"icon-name\"> ti-layout-cta-right</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-cta-left\"></span><span class=\"icon-name\"> ti-layout-cta-left</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-cta-center\"></span><span class=\"icon-name\"> ti-layout-cta-center</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-cta-btn-right\"></span><span class=\"icon-name\"> ti-layout-cta-btn-right</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-cta-btn-left\"></span><span class=\"icon-name\"> ti-layout-cta-btn-left</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-column4\"></span><span class=\"icon-name\"> ti-layout-column4</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-column3\"></span><span class=\"icon-name\"> ti-layout-column3</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-column2\"></span><span class=\"icon-name\"> ti-layout-column2</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-accordion-separated\"></span><span class=\"icon-name\"> ti-layout-accordion-separated</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-accordion-merged\"></span><span class=\"icon-name\"> ti-layout-accordion-merged</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-accordion-list\"></span><span class=\"icon-name\"> ti-layout-accordion-list</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-widgetized\"></span><span class=\"icon-name\"> ti-widgetized</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-widget\"></span><span class=\"icon-name\"> ti-widget</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-widget-alt\"></span><span class=\"icon-name\"> ti-widget-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-view-list\"></span><span class=\"icon-name\"> ti-view-list</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-view-list-alt\"></span><span class=\"icon-name\"> ti-view-list-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-view-grid\"></span><span class=\"icon-name\"> ti-view-grid</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-upload\"></span><span class=\"icon-name\"> ti-upload</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-download\"></span><span class=\"icon-name\"> ti-download</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-loop\"></span><span class=\"icon-name\"> ti-loop</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-sidebar-2\"></span><span class=\"icon-name\"> ti-layout-sidebar-2</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-grid4-alt\"></span><span class=\"icon-name\"> ti-layout-grid4-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-grid3-alt\"></span><span class=\"icon-name\"> ti-layout-grid3-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-grid2-alt\"></span><span class=\"icon-name\"> ti-layout-grid2-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-column4-alt\"></span><span class=\"icon-name\"> ti-layout-column4-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-column3-alt\"></span><span class=\"icon-name\"> ti-layout-column3-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-layout-column2-alt\"></span><span class=\"icon-name\"> ti-layout-column2-alt</span>\n                            </div>\n\n\n                        </div> <!-- Layout Icons -->\n\n\n                        <div class=\"icon-section\">\n                            <h3>Brand Icons</h3>\n\n                            <div class=\"icon-container\">\n                                <span class=\"ti-flickr\"></span><span class=\"icon-name\"> ti-flickr</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-flickr-alt\"></span><span class=\"icon-name\"> ti-flickr-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-instagram\"></span><span class=\"icon-name\"> ti-instagram</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-google\"></span><span class=\"icon-name\"> ti-google</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-github\"></span><span class=\"icon-name\"> ti-github</span>\n                            </div>\n\n                            <div class=\"icon-container\">\n                                <span class=\"ti-facebook\"></span><span class=\"icon-name\"> ti-facebook</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-dropbox\"></span><span class=\"icon-name\"> ti-dropbox</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-dropbox-alt\"></span><span class=\"icon-name\"> ti-dropbox-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-dribbble\"></span><span class=\"icon-name\"> ti-dribbble</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-apple\"></span><span class=\"icon-name\"> ti-apple</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-android\"></span><span class=\"icon-name\"> ti-android</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-yahoo\"></span><span class=\"icon-name\"> ti-yahoo</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-trello\"></span><span class=\"icon-name\"> ti-trello</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-stack-overflow\"></span><span class=\"icon-name\"> ti-stack-overflow</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-soundcloud\"></span><span class=\"icon-name\"> ti-soundcloud</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-sharethis\"></span><span class=\"icon-name\"> ti-sharethis</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-sharethis-alt\"></span><span class=\"icon-name\"> ti-sharethis-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-reddit\"></span><span class=\"icon-name\"> ti-reddit</span>\n                            </div>\n\n                            <div class=\"icon-container\">\n                                <span class=\"ti-microsoft\"></span><span class=\"icon-name\"> ti-microsoft</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-microsoft-alt\"></span><span class=\"icon-name\"> ti-microsoft-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-linux\"></span><span class=\"icon-name\"> ti-linux</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-jsfiddle\"></span><span class=\"icon-name\"> ti-jsfiddle</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-joomla\"></span><span class=\"icon-name\"> ti-joomla</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-html5\"></span><span class=\"icon-name\"> ti-html5</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-css3\"></span><span class=\"icon-name\"> ti-css3</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-drupal\"></span><span class=\"icon-name\"> ti-drupal</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-wordpress\"></span><span class=\"icon-name\"> ti-wordpress</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-tumblr\"></span><span class=\"icon-name\"> ti-tumblr</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-tumblr-alt\"></span><span class=\"icon-name\"> ti-tumblr-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-skype\"></span><span class=\"icon-name\"> ti-skype</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-youtube\"></span><span class=\"icon-name\"> ti-youtube</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-vimeo\"></span><span class=\"icon-name\"> ti-vimeo</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-vimeo-alt\"></span><span class=\"icon-name\"> ti-vimeo-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-twitter\"></span><span class=\"icon-name\"> ti-twitter</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-twitter-alt\"></span><span class=\"icon-name\"> ti-twitter-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-linkedin\"></span><span class=\"icon-name\"> ti-linkedin</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-pinterest\"></span><span class=\"icon-name\"> ti-pinterest</span>\n                            </div>\n\n                            <div class=\"icon-container\">\n                                <span class=\"ti-pinterest-alt\"></span><span class=\"icon-name\"> ti-pinterest-alt</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-themify-logo\"></span><span class=\"icon-name\"> ti-themify-logo</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-themify-favicon\"></span><span class=\"icon-name\"> ti-themify-favicon</span>\n                            </div>\n                            <div class=\"icon-container\">\n                                <span class=\"ti-themify-favicon-alt\"></span><span class=\"icon-name\"> ti-themify-favicon-alt</span>\n                            </div>\n\n                        </div> <!-- brand Icons -->\n\n                    </div>\n                </div>\n            </div>\n\n        </div>\n    </div>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/icons/icons.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return IconsComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var IconsComponent = (function () {
+    function IconsComponent() {
+    }
+    return IconsComponent;
+}());
+IconsComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'icons-cmp',
+        template: __webpack_require__("../../../../../src/app/icons/icons.component.html")
+    })
+], IconsComponent);
+
+//# sourceMappingURL=icons.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/maps/maps.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container-fluid\">\n    <div class=\"row\">\n        <div class=\"col-lg-9 col-sm-12 \">\n            <div class=\"card\">\n                <div class=\"content\" style=\"padding: 0;\">\n                    <ngui-map zoom=\"17\" center=\"40.748817,-73.985428\">\n                        <marker [position]=\"[40.748817,-73.985428]\"></marker>\n                        <map-circle [center]=\"{lat: 40.748817, lng: -73.985428}\">\n                        </map-circle>\n                    </ngui-map>\n                </div>\n            </div>\n        </div>\n\n       \n    </div>\n    <div class=\"row\">\n\n        <div class=\"col-lg-9 col-sm-12 waste\">\n            <div class=\"card\">\n                <div class=\"content\" style=\"display: -webkit-box;\">\n                    <div class=\"col-md-6 col-lg-2 col-sm-12 \">\n\n                        <div class=\"header customheader\">\n                            <h4 class=\"title\">PARKING</h4>\n\n                        </div>\n\n\n                    </div>\n                    <div class=\"col-md-6 col-lg-2 col-sm-12 customgrid \" style=\"background-image: linear-gradient(to right , #37bfd0 , #58D8E8);\">\n\n                        <div class=\"header col-lg-12\">\n                            <div class=\"col-lg-6\">\n                                <h4 class=\"title\">112</h4>\n                                <p class=\"category\">Available</p>\n                            </div>\n                            <div class=\"col-lg-6\">\n                                <h4 class=\"title\">512</h4>\n                                <p class=\"category\">Occupied</p>\n                            </div>\n                        </div>\n\n\n                    </div>\n                    <div class=\"col-md-6 col-lg-2 col-sm-12 customgrid\" style=\"background-image: linear-gradient(to right , #00d18b , #02ce86);\">\n\n                        <div class=\"header col-lg-12\">\n                            <div class=\"col-lg-6\">\n                                <h4 class=\"title\">112</h4>\n                                <p class=\"category\">Available</p>\n                            </div>\n                            <div class=\"col-lg-6 floatRight\">\n                                    <img src=\"../../assets/img/drywaste.svg\" alt=\"\" class=\"inImage\">\n                                </div>\n                        </div>\n\n\n                    </div>\n                    <div class=\"col-md-6 col-lg-2 col-sm-12 customgrid\" style=\"background-image: linear-gradient(to right , #ff9465 , #ff9869);\">\n\n                        <div class=\"header col-lg-12\">\n                            <div class=\"col-lg-6\">\n                                <h4 class=\"title\">112</h4>\n                                <p class=\"category\">Available</p>\n                            </div>\n                            <div class=\"col-lg-6 floatRight\">\n                                    <img src=\"../../assets/img/drywaste.svg\" alt=\"\" class=\"inImage\">\n                                </div>\n                        </div>\n\n\n                    </div>\n                    <div class=\"col-md-6 col-lg-2 col-sm-12 customgrid\" style=\"background-image: linear-gradient(to right , #ff617d , #ff5473);\">\n\n                        <div class=\"header col-lg-12\">\n                            <div class=\"col-lg-6\">\n                                <h4 class=\"title\">112</h4>\n                                <p class=\"category\">Available</p>\n                            </div>\n                            <div class=\"col-lg-6 floatRight\">\n                                    <img src=\"../../assets/img/drywaste.svg\" alt=\"\" class=\"inImage\">\n                                </div>\n                        </div>\n\n\n                    </div>\n                </div>\n\n            </div>\n\n        </div>\n        <!-- <div class=\"col-lg-3 col-sm-12\">\n            <div class=\"card\">\n                <div class=\"content\">\n                    <div class=\"row\">\n                        <div class=\"col-xs-12 col-lg-9\">\n                            <div class=\"numbers\">\n                                <p>SPECIALLY ABLED PARKING</p>\n\n                            </div>\n                        </div>\n                        <table class=\"table\">\n                            <thead>\n                                <tr>\n                                        <th>Lot No</th>\n                                        <th>Owner</th>\n                                        <th>Time</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>Default</td>\n                                    <td>Defaultson</td>\n                                    <td>def@somemail.com</td>\n                                </tr>\n                                <tr class=\"success\">\n                                    <td>Success</td>\n                                    <td>Doe</td>\n                                    <td>john@example.com</td>\n                                </tr>\n                                <tr class=\"danger\">\n                                    <td>Danger</td>\n                                    <td>Moe</td>\n                                    <td>mary@example.com</td>\n                                </tr>\n                                <tr class=\"info\">\n                                    <td>Info</td>\n                                    <td>Dooley</td>\n                                    <td>july@example.com</td>\n                                </tr>\n\n                            </tbody>\n                        </table>\n\n\n                    </div>\n\n                </div>\n            </div>\n        </div> -->\n    </div>\n    <div class=\"row\">\n        <div class=\"col-md-6 col-lg-3 col-sm-12\">\n            <div class=\"card\">\n                <div class=\"header\">\n                    <h4 class=\"title\">Car Counter</h4>\n                </div>\n                <div class=\"content\">\n                    <div id=\"chartHours\" style=\"    height: 500px;\" class=\"ct-chart\"></div>\n\n                </div>\n            </div>\n        </div>\n        <div class=\"col-md-6 col-lg-6 col-sm-12\">\n            <div class=\"col-lg-12\">\n                <div class=\"card\">\n                    <div class=\"header\">\n                        <h4 class=\"title\">Parking Duration</h4>\n\n                    </div>\n                    <div class=\"content\">\n\n                        <div id=\"chartActivity\" style=\"height: 100px;\n                        margin: 0;\n                        display: inline;\" class=\"ct-chart\"></div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-lg-6\">\n                <div class=\"card\">\n                    <div class=\"header\">\n                        <h4 class=\"title\">VIP PARKING STATUS</h4>\n\n                    </div>\n                    <div class=\"content\">\n\n                        <table class=\"table\" style=\"margin-left: 17px\">\n                            <thead>\n                                <tr>\n                                    <th>Lot No</th>\n                                    <th>Owner</th>\n                                    <th>Time</th>\n                                </tr>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>Default</td>\n                                    <td>Defaultson</td>\n                                    <td>def@somemail.com</td>\n                                </tr>\n                                <tr class=\"success\">\n                                    <td>Success</td>\n                                    <td>Doe</td>\n                                    <td>john@example.com</td>\n                                </tr>\n\n\n\n                            </tbody>\n                        </table>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-lg-6\">\n                <div class=\"card\">\n                    <div class=\"header\">\n                        <h4 class=\"title\">NO OF PARKING VIOLATION</h4>\n\n                    </div>\n                    <div class=\"content\">\n\n                        <div class=\"customNumber\">\n                            <h2>560</h2>\n                        </div>\n                    </div>\n                </div>\n            </div>\n\n\n        </div>\n        \n    </div>\n    \n    <div class=\"col-lg-3 col-sm-12\" style=\"    position: absolute;\nmargin-right: 0;\nright: 0;\ntop: 14%;\">\n        <div class=\"card\">\n            <div class=\"content\">\n                <div class=\"row\">\n                    <div class=\"col-xs-7  col-lg-8\">\n                        <div class=\"numbers\">\n                            <p>PARKING LOCATION</p>\n\n                        </div>\n                    </div>\n                    <table class=\"table\">\n                        <thead>\n                            <tr>\n                                <th>Lot No</th>\n                                <th>Owner</th>\n                                <th>Time</th>\n                            </tr>\n                        </thead>\n                        <tbody>\n                            <tr>\n                                <td>Default</td>\n                                <td>Defaultson</td>\n                                <td>def@somemail.com</td>\n                            </tr>\n                            <tr class=\"success\">\n                                <td>Success</td>\n                                <td>Doe</td>\n                                <td>john@example.com</td>\n                            </tr>\n                            <tr class=\"danger\">\n                                <td>Danger</td>\n                                <td>Moe</td>\n                                <td>mary@example.com</td>\n                            </tr>\n                            <tr class=\"info\">\n                                <td>Info</td>\n                                <td>Dooley</td>\n                                <td>july@example.com</td>\n                            </tr>\n                            <tr class=\"danger\">\n                                <td>Danger</td>\n                                <td>Moe</td>\n                                <td>mary@example.com</td>\n                            </tr>\n                            <tr class=\"info\">\n                                <td>Info</td>\n                                <td>Dooley</td>\n                                <td>july@example.com</td>\n                            </tr>\n\n\n                        </tbody>\n                    </table>\n\n\n                </div>\n\n            </div>\n        </div>\n    </div>\n    <div class=\"col-lg-3 col-sm-12\" style=\"       position: absolute;\n    margin-right: 0;\n    right: 0;\n    top: 525px;\">\n        <div class=\"card\">\n            <div class=\"content\">\n                <div class=\"row\">\n                    <div class=\"col-xs-7  col-lg-8\">\n                        <div class=\"numbers\">\n                            <p>PARKING LOCATION</p>\n\n                        </div>\n                    </div>\n                    <table class=\"table\">\n                        <thead>\n                            <tr>\n                                <th>Lot No</th>\n                                <th>Owner</th>\n                                <th>Time</th>\n                            </tr>\n                        </thead>\n                        <tbody>\n                            <tr>\n                                <td>Default</td>\n                                <td>Defaultson</td>\n                                <td>def@somemail.com</td>\n                            </tr>\n                            <tr class=\"success\">\n                                <td>Success</td>\n                                <td>Doe</td>\n                                <td>john@example.com</td>\n                            </tr>\n                            <tr class=\"danger\">\n                                <td>Danger</td>\n                                <td>Moe</td>\n                                <td>mary@example.com</td>\n                            </tr>\n                            <tr class=\"info\">\n                                <td>Info</td>\n                                <td>Dooley</td>\n                                <td>july@example.com</td>\n                            </tr>\n                            <tr class=\"danger\">\n                                <td>Danger</td>\n                                <td>Moe</td>\n                                <td>mary@example.com</td>\n                            </tr>\n                            <tr class=\"info\">\n                                <td>Info</td>\n                                <td>Dooley</td>\n                                <td>july@example.com</td>\n                            </tr>\n\n\n                        </tbody>\n                    </table>\n\n\n                </div>\n\n            </div>\n        </div>\n    </div>\n    <div class=\"col-lg-3 col-sm-12\" style=\"       position: absolute;\n    margin-right: 0;\n    right: 0;\n    top: 925px;\">\n        <div class=\"card\">\n            <div class=\"content\">\n                <div class=\"row\">\n                    <div class=\"col-xs-7  col-lg-8\">\n                        <div class=\"numbers\">\n                            <p>PARKING LOCATION</p>\n\n                        </div>\n                    </div>\n                    <table class=\"table\">\n                        <thead>\n                            <tr>\n                                <th>Lot No</th>\n                                <th>Owner</th>\n                                <th>Time</th>\n                            </tr>\n                        </thead>\n                        <tbody>\n                            <tr>\n                                <td>Default</td>\n                                <td>Defaultson</td>\n                                <td>def@somemail.com</td>\n                            </tr>\n                            <tr class=\"success\">\n                                <td>Success</td>\n                                <td>Doe</td>\n                                <td>john@example.com</td>\n                            </tr>\n                            <tr class=\"danger\">\n                                <td>Danger</td>\n                                <td>Moe</td>\n                                <td>mary@example.com</td>\n                            </tr>\n                           \n\n\n                        </tbody>\n                    </table>\n\n\n                </div>\n\n            </div>\n        </div>\n    </div>\n\n</div>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/maps/maps.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MapsComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_chartist__ = __webpack_require__("../../../../chartist/dist/chartist.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_chartist___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_chartist__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+var MapsComponent = (function () {
+    function MapsComponent() {
+    }
+    MapsComponent.prototype.ngOnInit = function () {
+        var dataSales = {
+            labels: ['9:00AM', '12:00AM', '3:00PM', '6:00PM', '9:00PM', '12:00PM', '3:00AM', '6:00AM'],
+            series: [
+                [287, 385, 490, 562, 594, 626, 698, 895, 952],
+                [67, 152, 193, 240, 387, 435, 535, 642, 744],
+                [23, 113, 67, 108, 190, 239, 307, 410, 410]
+            ]
+        };
+        var optionsSales = {
+            low: 0,
+            high: 1000,
+            showArea: true,
+            height: "245px",
+            axisX: {
+                showGrid: false,
+            },
+            lineSmooth: __WEBPACK_IMPORTED_MODULE_1_chartist__["Interpolation"].simple({
+                divisor: 3
+            }),
+            showLine: true,
+            showPoint: false,
+        };
+        var responsiveSales = [
+            ['screen and (max-width: 640px)', {
+                    axisX: {
+                        labelInterpolationFnc: function (value) {
+                            return value[0];
+                        }
+                    }
+                }]
+        ];
+        new __WEBPACK_IMPORTED_MODULE_1_chartist__["Line"]('#chartHours', dataSales, optionsSales, responsiveSales);
+        var data = {
+            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+            series: [
+                [542, 543, 520, 680, 653, 753, 326, 434, 568, 610, 756, 895],
+                [230, 293, 380, 480, 503, 553, 600, 664, 698, 710, 736, 795]
+            ]
+        };
+        var options = {
+            seriesBarDistance: 10,
+            axisX: {
+                showGrid: false
+            },
+            height: "245px"
+        };
+        var responsiveOptions = [
+            ['screen and (max-width: 640px)', {
+                    seriesBarDistance: 5,
+                    axisX: {
+                        labelInterpolationFnc: function (value) {
+                            return value[0];
+                        }
+                    }
+                }]
+        ];
+        new __WEBPACK_IMPORTED_MODULE_1_chartist__["Line"]('#chartActivity', data, options, responsiveOptions);
+        var dataPreferences = {
+            series: [
+                [25, 30, 20, 25]
+            ]
+        };
+        var optionsPreferences = {
+            donut: true,
+            donutWidth: 40,
+            startAngle: 0,
+            total: 100,
+            showLabel: false,
+            axisX: {
+                showGrid: false
+            }
+        };
+        new __WEBPACK_IMPORTED_MODULE_1_chartist__["Pie"]('#chartPreferences', dataPreferences, optionsPreferences);
+        new __WEBPACK_IMPORTED_MODULE_1_chartist__["Pie"]('#chartPreferences', {
+            labels: ['62%', '32%', '6%'],
+            series: [62, 32, 6]
+        });
+        var myLatlng = new google.maps.LatLng(40.748817, -73.985428);
+        var mapOptions = {
+            zoom: 13,
+            center: myLatlng,
+            scrollwheel: false,
+            styles: [{ "featureType": "water", "stylers": [{ "saturation": 43 }, { "lightness": -11 }, { "hue": "#0088ff" }] }, { "featureType": "road", "elementType": "geometry.fill", "stylers": [{ "hue": "#ff0000" }, { "saturation": -100 }, { "lightness": 99 }] }, { "featureType": "road", "elementType": "geometry.stroke", "stylers": [{ "color": "#808080" }, { "lightness": 54 }] }, { "featureType": "landscape.man_made", "elementType": "geometry.fill", "stylers": [{ "color": "#ece2d9" }] }, { "featureType": "poi.park", "elementType": "geometry.fill", "stylers": [{ "color": "#ccdca1" }] }, { "featureType": "road", "elementType": "labels.text.fill", "stylers": [{ "color": "#767676" }] }, { "featureType": "road", "elementType": "labels.text.stroke", "stylers": [{ "color": "#ffffff" }] }, { "featureType": "poi", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape.natural", "elementType": "geometry.fill", "stylers": [{ "visibility": "on" }, { "color": "#b8cb93" }] }, { "featureType": "poi.park", "stylers": [{ "visibility": "on" }] }, { "featureType": "poi.sports_complex", "stylers": [{ "visibility": "on" }] }, { "featureType": "poi.medical", "stylers": [{ "visibility": "on" }] }, { "featureType": "poi.business", "stylers": [{ "visibility": "simplified" }] }]
+        };
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            title: "Hello World!"
+        });
+        // To add the marker to the map, call setMap();
+        marker.setMap(map);
+    };
+    return MapsComponent;
+}());
+MapsComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'maps-cmp',
+        template: __webpack_require__("../../../../../src/app/maps/maps.component.html")
+    })
+], MapsComponent);
+
+//# sourceMappingURL=maps.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/notifications/notifications.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container-fluid dashboard\">\n\n\n    <div class=\"row\">\n        <div class=\"col-lg-2 col-sm-12\">\n            <div class=\"card\">\n                <div class=\"content customcontent\">\n                    <div class=\"row\">\n                        <div class=\"col-xs-7\">\n                            <div class=\"numbers\">\n                                <p>AVAILABLE WATER QUANTITY</p>\n\n                            </div>\n                        </div>\n                        <div class=\"col-xs-12 \" style=\"text-align: center;\">\n                            <img src=\"../../assets/img/graph1.svg\" alt=\"\">\n                        </div>\n\n                    </div>\n\n                </div>\n            </div>\n        </div>\n        <div class=\"col-lg-3 col-sm-12\">\n            <div class=\"card\">\n                <div class=\"content customcontent\">\n                    <div class=\"row\">\n                        <div class=\"col-xs-7 customNumbers\">\n                            <div class=\"numbers\">\n                                <p>SUPPLY V/s CONSUMPTION ANALYSIS</p>\n\n                            </div>\n                        </div>\n\n                    </div>\n\n                </div>\n            </div>\n        </div>\n        <div class=\"col-lg-2 col-sm-12\">\n            <div class=\"card\">\n                <div class=\"content customcontent\">\n                    <div class=\"row\">\n                        <div class=\"col-xs-7 customNumbers\">\n                            <div class=\"numbers\">\n                                <p>TOTAL CONNECTIONS</p>\n\n                            </div>\n                        </div>\n                        <div class=\"col-xs-5 customicons\">\n\n                            <img src=\"../../assets/img/alert.svg\" alt=\"\">\n\n                        </div>\n                        <div class=\"customNumber\">\n                            <h2 class=\"customH1\">654</h2>\n                        </div>\n                    </div>\n\n                </div>\n            </div>\n        </div>\n\n        <div class=\"col-md-6 col-lg-3 col-sm-12\">\n            <div class=\"col-lg-12\">\n                <div class=\"card parkingcard\" style=\"padding-top: 1%;padding-bottom: 1%;\">\n                    <div class=\"content\">\n                        <div class=\"row\">\n                            <div class=\"col-xs-7 customNumbers\">\n                                <div class=\"numbers\">\n                                    <p>WATER STORAGE TANKS</p>\n\n                                </div>\n                            </div>\n\n\n                            <table class=\"table customtable1 customtable2 parkingtable2\">\n                                <tr>\n\n                                    <td>\n                                        <p style=\"    border: none;\">\n                                            <span class=\"green\">0</span>\n                                            <br>\n                                            <br>\n                                            <span class=\"customspan1\">15</span>\n                                            <br>\n                                            <br>\n                                            <span class=\"customspan2\">LIGHTS ON</span>\n                                        </p>\n                                    </td>\n                                    <td>\n                                        <p style=\"    border: none;\">\n                                            <span class=\"orange\">0</span>\n                                            <br>\n                                            <br>\n                                            <span class=\"customspan1\">6300</span>\n                                            <br>\n                                            <br>\n                                            <span class=\"customspan2\">LIGHTS OFF</span>\n                                        </p>\n                                    </td>\n                                    <td>\n                                        <p style=\"    border: none;\">\n                                            <span class=\"green\" style=\"background: transparent\">0</span>\n                                            <br>\n                                            <br>\n                                            <span class=\"customspan1\">10</span>\n                                            <br>\n                                            <br>\n                                            <span class=\"customspan2\">NOT WORKING</span>\n                                        </p>\n                                    </td>\n                                </tr>\n\n                            </table>\n\n                        </div>\n\n                    </div>\n                </div>\n\n            </div>\n\n\n        </div>\n        <div class=\"col-lg-2 col-sm-12\">\n            <div class=\"card\">\n                <div class=\"content customcontent\">\n                    <div class=\"row\">\n                        <div class=\"col-xs-12 customNumbers\">\n                            <div class=\"numbers\">\n                                <p>WATER SERVICE DISRUPTION</p>\n\n                            </div>\n                        </div>\n                      \n                        <div class=\"customNumber\">\n                            <h2 class=\"customH1\">24</h2>\n                        </div>\n                    </div>\n\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"row customrow2\">\n        <div class=\"col-lg-4 col-sm-12\">\n            <div class=\"card\">\n                <div class=\"content\">\n                    <div class=\"row\">\n                        <div class=\"col-xs-7 customNumbers\">\n                            <div class=\"numbers\">\n                                <p>WATER SERVICE DISRUPTION</p>\n\n                            </div>\n                        </div>\n                        <table class=\"table customtable1 customtable2\">\n                            <tr>\n                                <td>\n                                    <p>\n                                        <span class=\"customspan1\">426</span>\n                                        <br>\n                                        <span class=\"customspan2\">Residual Chlorine</span>\n                                    </p>\n                                </td>\n                                <td>\n                                    <p>\n                                        <span class=\"customspan1\">542</span>\n                                        <br>\n                                        <span class=\"customspan2\">Hardness</span>\n                                    </p>\n                                </td>\n                                <td>\n                                    <p>\n                                        <span class=\"customspan1\">542</span>\n                                        <br>\n                                        <span class=\"customspan2\">Turbidity</span>\n                                    </p>\n                                </td>\n                                <td>\n                                    <p>\n                                        <span class=\"customspan1\">542</span>\n                                        <br>\n                                        <span class=\"customspan2\">Total Solids</span>\n                                    </p>\n                                </td>\n                            </tr>\n\n                        </table>\n\n                    </div>\n\n                </div>\n            </div>\n        </div>\n        <div class=\"col-lg-2 col-sm-12\">\n            <div class=\"card\">\n                <div class=\"content customcontent\">\n                    <div class=\"row\">\n                        <div class=\"col-xs-12 customNumbers\">\n                            <div class=\"numbers\">\n                                <p>WATER PURIFYING UNITS</p>\n\n                            </div>\n                        </div>\n\n                        <div class=\"customNumber\">\n                            <h2 class=\"customH1\">243</h2>\n                        </div>\n                    </div>\n\n                </div>\n            </div>\n        </div>\n        <div class=\"col-lg-2 col-sm-12\">\n            <div class=\"card\">\n                <div class=\"content customcontent\">\n                    <div class=\"row\">\n                        <div class=\"col-xs-7 customNumbers\">\n                            <div class=\"numbers\">\n                                <p style=\"text-align:left;\">LAB REPORTS\n                                    <br>\n                                    <span style=\"color: grey;\"> (Latest testing done)</span>\n                                </p>\n\n                            </div>\n                        </div>\n                        <div class=\"col-xs-5 customicons\">\n\n                            <img src=\"../../assets/img/alert.svg\" alt=\"\">\n\n                        </div>\n                        <div class=\"customNumber\">\n                            <h2 class=\"customH1\">524</h2>\n                        </div>\n                    </div>\n\n                </div>\n            </div>\n        </div>\n        <div class=\"col-lg-4 col-sm-12\">\n            <div class=\"card parkingcard\">\n\n                <div class=\"row\">\n                    <div class=\"col-xs-7 customNumbers\">\n                        <div class=\"numbers\">\n                            <p>RAW WATER SUPPLY SERVICES</p>\n\n                        </div>\n                    </div>\n                   \n                    <table class=\"table customtable1 parkingtable\">\n                        <!-- <tr>\n                            <td>\n                                <div class=\"card\">\n                                    <div class=\"card-header numberheader\">102</div>\n                                    <div class=\"card-footer numberfooter\">Total</div>\n                                </div>\n                            </td>\n                            <td>\n                                <div class=\"card\">\n                                    <div class=\"card-header numberheader\">102</div>\n                                    <div class=\"card-footer numberfooter\" style=\"background: #ff2274de;\">Supply ON</div>\n                                </div>\n                            </td>\n                            <td>\n                                <div class=\"card\">\n                                    <div class=\"card-header numberheader\">102</div>\n                                    <div class=\"card-footer numberfooter\" style=\"background: grey;\">Supply OFF</div>\n                                </div>\n                            </td>\n\n                        </tr> -->\n                    </table>\n\n\n                </div>\n\n            </div>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col-lg-2 col-sm-12\">\n            <div class=\"card\">\n                <div class=\"content customcontent\">\n                    <div class=\"row\">\n                        <div class=\"col-xs-12 customNumbers\">\n                            <div class=\"numbers\">\n                                <p>CITIZES SATISFACTION INDEX</p>\n\n                            </div>\n                        </div>\n\n                        <div class=\"customNumber\">\n                            <h2 class=\"customH1\">345</h2>\n                        </div>\n                    </div>\n\n                </div>\n            </div>\n        </div>\n        <div class=\"col-lg-4 col-sm-12\">\n            <div class=\"card\">\n                <div class=\"content customcontent\">\n                    <div class=\"row\">\n                        <div class=\"col-xs-12 customNumbers\">\n                            <div class=\"numbers\">\n                                <p>WATER CONSUMPTION DAILY</p>\n\n                            </div>\n                        </div>\n\n\n                    </div>\n\n                </div>\n            </div>\n        </div>\n        <div class=\"col-lg-6 col-sm-12\">\n            <div class=\"card\" style=\"    padding: 21px;\">\n\n                <div class=\"row\">\n                    <div class=\"col-xs-7 customNumbers\">\n                        <div class=\"numbers\">\n                            <p>WATER REQUIREMENT</p>\n\n                        </div>\n                    </div>\n\n                    <table class=\"table customtable1 parkingtable\">\n                        <tr>\n                            <td>\n                                <div class=\"card\">\n                                    HOME\n                                    <div class=\"card-header numberheader\">102</div>\n\n                                </div>\n                            </td>\n                            <td>\n                                <div class=\"card\">\n                                    Public\n                                    <div class=\"card-header numberheader\">102</div>\n\n                                </div>\n                            </td>\n                            <td>\n                                <div class=\"card\">\n                                    Industries\n                                    <div class=\"card-header numberheader\">102</div>\n\n                                </div>\n                            </td>\n                            <td>\n                                <div class=\"card\">\n                                    Fire Services\n                                    <div class=\"card-header numberheader\">102</div>\n\n                                </div>\n                            </td>\n\n                        </tr>\n                    </table>\n\n\n                </div>\n\n            </div>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col-lg-6 col-sm-12 \">\n            <div class=\"col-lg-12\">\n                <div class=\"card\">\n                    <div class=\"content\" style=\"padding: 0;\">\n                            <div id=\"chartdiv\" [style.width.%]=\"100\" [style.height.px]=\"245\"></div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-lg-12\">\n                <div class=\"card\">\n                    <div class=\"content\" style=\"padding: 0;\">\n                        <ngui-map zoom=\"1\" center=\"40.748817,-73.985428\">\n                            <marker [position]=\"[40.748817,-73.985428]\"></marker>\n                            <map-circle [center]=\"{lat: 40.748817, lng: -73.985428}\">\n                            </map-circle>\n                        </ngui-map>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"col-lg-6 col-sm-12 \">\n            <div class=\"col-lg-3 col-sm-12\">\n                <div class=\"card\">\n                    <div class=\"content customcontent\">\n                        <div class=\"row\">\n                            <div class=\"col-xs-12 customNumbers\">\n                                <div class=\"numbers\">\n                                    <p>AVERAGE RAIN FALL</p>\n\n                                </div>\n                            </div>\n\n                            <div class=\"customNumber\">\n                                <h2 class=\"customH1\">345</h2>\n                            </div>\n                        </div>\n\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-lg-3 col-sm-12\">\n                <div class=\"card\">\n                    <div class=\"content customcontent\">\n                        <div class=\"row\">\n                            <div class=\"col-xs-12 customNumbers\">\n                                <div class=\"numbers\">\n                                    <p>DISCHARGE VELOCITY</p>\n\n                                </div>\n                            </div>\n\n                            <div class=\"customNumber\">\n                                <h2 class=\"customH1\">345</h2>\n                            </div>\n                        </div>\n\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-lg-6 col-sm-12\">\n                <div class=\"card\">\n                    <div class=\"content customcontent\">\n                        <div class=\"row\">\n                            <div class=\"col-xs-12 customNumbers\">\n                                <div class=\"numbers\">\n                                    <p>ALERTS</p>\n\n                                </div>\n                            </div>\n                            \n                            <div class=\"col-lg-12 mapcustom\" >\n                              \n                            </div>\n                        </div>\n\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-lg-4 col-sm-12\">\n                <div class=\"card\">\n                    <div class=\"content customcontent\">\n                        <div class=\"row\">\n                            <div class=\"col-xs-12 customNumbers\">\n                                <div class=\"numbers\">\n                                    <p>DIGITAL METERS [Units per months]</p>\n\n                                </div>\n                            </div>\n                            \n                            <div class=\"customNumber\">\n                                <h2 class=\"customH1\">24</h2>\n                            </div>\n                        </div>\n\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-lg-8 col-sm-12\">\n                    <div class=\"card parkingcard\" style=\"padding-top: 1%;padding-bottom: 1%;\">\n                            <div class=\"content\">\n                                <div class=\"row\">\n                                    <div class=\"col-xs-7 customNumbers\">\n                                        <div class=\"numbers\">\n                                            <p>BILLING</p>\n        \n                                        </div>\n                                    </div>\n        \n        \n                                    <table class=\"table customtable1 customtable2 parkingtable2\">\n                                        <tr>\n        \n                                            <td>\n                                                <p style=\"    border: none;\">\n                                                    <span class=\"green\">0</span>\n                                                    <br>\n                                                    <br>\n                                                    <span class=\"customspan1\">15</span>\n                                                    <br>\n                                                    <br>\n                                                    <span class=\"customspan2\">LIGHTS ON</span>\n                                                </p>\n                                            </td>\n                                            <td>\n                                                <p style=\"    border: none;\">\n                                                    <span class=\"orange\">0</span>\n                                                    <br>\n                                                    <br>\n                                                    <span class=\"customspan1\">6300</span>\n                                                    <br>\n                                                    <br>\n                                                    <span class=\"customspan2\">LIGHTS OFF</span>\n                                                </p>\n                                            </td>\n                                            <td>\n                                                <p style=\"    border: none;\">\n                                                    <span class=\"green\" style=\"background: transparent\">0</span>\n                                                    <br>\n                                                    <br>\n                                                    <span class=\"customspan1\">10</span>\n                                                    <br>\n                                                    <br>\n                                                    <span class=\"customspan2\">NOT WORKING</span>\n                                                </p>\n                                            </td>\n                                        </tr>\n        \n                                    </table>\n        \n                                </div>\n        \n                            </div>\n                        </div>\n            </div>\n        </div>\n    </div>\n</div>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/notifications/notifications.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NotificationsComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var NotificationsComponent = (function () {
+    function NotificationsComponent() {
+    }
+    //   title = 'app';
+    //   private chart: AmChart;
+    //   public options: any;
+    //   private chart2: AmChart;
+    //   private timer: any;
+    //   public pieChartLabels: string[] = ["Pending", "InProgress", "OnHold", "Complete", "Cancelled"];
+    //   public pieChartData: number[] = [21, 39, 10, 14, 16];
+    //   public pieChartType: string = 'pie';
+    //   public pieChartOptions: any = {
+    //     'backgroundColor': [
+    //       "#FF6384",
+    //       "#4BC0C0",
+    //       "#FFCE56",
+    //       "#E7E9ED",
+    //       "#36A2EB"
+    //     ]
+    //   }
+    //   dataSource: Object;
+    //   constructor(private AmCharts: AmChartsService) {
+    //     this.dataSource = {
+    //       "chart": {
+    //       "lowerLimit": "0",
+    //       "upperLimit": "100",
+    //       "showValue": "1",
+    //       "numberSuffix": "%",
+    //       "theme": "fusion",
+    //       "showToolTip": "0"
+    //   },
+    //   // Gauge Data
+    //   "colorRange": {
+    //       "color": [{
+    //           "minValue": "0",
+    //           "maxValue": "50",
+    //           "code": "#F2726F"
+    //       }, {
+    //           "minValue": "50",
+    //           "maxValue": "75",
+    //           "code": "#FFC533"
+    //       }, {
+    //           "minValue": "75",
+    //           "maxValue": "100",
+    //           "code": "#62B58F"
+    //       }]
+    //   },
+    //   "dials": {
+    //       "dial": [{
+    //           "value": "81"
+    //       }]
+    //   }
+    // }; // end of this.dataSource
+    //   } // end of constructor
+    //   makeRandomDataProvider() {
+    //     const dataProvider = [];
+    //     // Generate random data
+    //     for (let year = 1950; year <= 2005; ++year) {
+    //       dataProvider.push({
+    //         year: '' + year,
+    //         value: Math.floor(Math.random() * 100) - 50
+    //       });
+    //     }
+    //     return dataProvider;
+    //   }
+    //   makeOptions(dataProvider) {
+    //     return {
+    //       'type': 'serial',
+    //       'theme': 'dark',
+    //       'marginTop': 0,
+    //       'marginRight': 80,
+    //       'dataProvider': dataProvider,
+    //       'valueAxes': [{
+    //         'axisAlpha': 0,
+    //         'position': 'left'
+    //       }],
+    //       'graphs': [{
+    //         'id': 'g1',
+    //         'balloonText': '[[category]]<br><b><span style=\'font-size:14px;\'>[[value]]</span></b>',
+    //         'bullet': 'round',
+    //         'bulletSize': 8,
+    //         'lineColor': '#d1655d',
+    //         'lineThickness': 2,
+    //         'negativeLineColor': '#637bb6',
+    //         'type': 'smoothedLine',
+    //         'valueField': 'value'
+    //       }],
+    //       'chartScrollbar': {
+    //         'graph': 'g1',
+    //         'gridAlpha': 0,
+    //         'color': '#888888',
+    //         'scrollbarHeight': 55,
+    //         'backgroundAlpha': 0,
+    //         'selectedBackgroundAlpha': 0.1,
+    //         'selectedBackgroundColor': '#888888',
+    //         'graphFillAlpha': 0,
+    //         'autoGridCount': true,
+    //         'selectedGraphFillAlpha': 0,
+    //         'graphLineAlpha': 0.2,
+    //         'graphLineColor': '#c2c2c2',
+    //         'selectedGraphLineColor': '#888888',
+    //         'selectedGraphLineAlpha': 1
+    //       },
+    //       'chartCursor': {
+    //         'categoryBalloonDateFormat': 'YYYY',
+    //         'cursorAlpha': 0,
+    //         'valueLineEnabled': true,
+    //         'valueLineBalloonEnabled': true,
+    //         'valueLineAlpha': 0.5,
+    //         'fullWidth': true
+    //       },
+    //       'dataDateFormat': 'YYYY',
+    //       'categoryField': 'year',
+    //       'categoryAxis': {
+    //         'minPeriod': 'YYYY',
+    //         'parseDates': true,
+    //         'minorGridAlpha': 0.1,
+    //         'minorGridEnabled': true
+    //       },
+    //       'export': {
+    //         'enabled': true
+    //       }
+    //     };
+    //   }
+    //   ngAfterViewInit() {
+    //   }
+    //   // events on slice click
+    //   public chartClicked(e: any): void {
+    //     console.log(e);
+    //   }
+    //   // event on pie chart slice hover
+    //   public chartHovered(e: any): void {
+    //     console.log(e);
+    //   }
+    //   ngOnDestroy() {
+    //     clearInterval(this.timer);
+    //     // Cleanup chartdiv2
+    //     if (this.chart2) {
+    //       this.AmCharts.destroyChart(this.chart2);
+    //     }
+    //   }
+    //   ngOnInit() {
+    //     this.options = this.makeOptions(this.makeRandomDataProvider());
+    //     // Create chartdiv2
+    //     this.chart2 = this.AmCharts.makeChart('chartdiv', this.makeOptions(this.makeRandomDataProvider()));
+    //     this.timer= setInterval(() => {
+    //       // Update chartdiv1
+    //       this.options = this.makeOptions(this.makeRandomDataProvider());
+    //       // Update chartdiv2
+    //       this.AmCharts.updateChart(this.chart2, () => {
+    //         this.chart2.dataProvider = this.makeRandomDataProvider();
+    //       });
+    //     }, 1000);
+    //   }
+    NotificationsComponent.prototype.ngOnInit = function () {
+    };
+    return NotificationsComponent;
+}());
+NotificationsComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'notifications-cmp',
+        template: __webpack_require__("../../../../../src/app/notifications/notifications.component.html")
+    })
+], NotificationsComponent);
+
+//# sourceMappingURL=notifications.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/shared/fixedplugin/fixedplugin.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"fixed-plugin\">\n    <div class=\"dropdown show-dropdown\">\n        <a href=\"#\" data-toggle=\"dropdown\">\n        <i class=\"fa fa-cog fa-2x\"> </i>\n        </a>\n        <ul class=\"dropdown-menu\">\n            <li class=\"header-title\">Sidebar Background</li>\n            <li class=\"adjustments-line text-center\">\n                <a href=\"javascript:void(0)\" class=\"switch-trigger background-color\">\n                        <span class=\"badge filter badge-white active\" data-color=\"white\"></span>\n                        <span class=\"badge filter badge-black\" data-color=\"black\"></span>\n                </a>\n            </li>\n\n\t\t\t<li class=\"header-title\">Sidebar Active Color</li>\n            <li class=\"adjustments-line text-center\">\n                <a href=\"javascript:void(0)\" class=\"switch-trigger active-color\">\n                        <span class=\"badge filter badge-primary\" data-color=\"primary\"></span>\n                        <span class=\"badge filter badge-info\" data-color=\"info\"></span>\n                        <span class=\"badge filter badge-success\" data-color=\"success\"></span>\n                        <span class=\"badge filter badge-warning\" data-color=\"warning\"></span>\n                        <span class=\"badge filter badge-danger active\" data-color=\"danger\"></span>\n                </a>\n            </li>\n\n        </ul>\n    </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/shared/fixedplugin/fixedplugin.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FixedPluginComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var FixedPluginComponent = (function () {
+    function FixedPluginComponent() {
+    }
+    FixedPluginComponent.prototype.ngOnInit = function () {
+        var $sidebar = $('.sidebar');
+        var $off_canvas_sidebar = $('.off-canvas-sidebar');
+        var window_width = $(window).width();
+        if (window_width > 767) {
+            if ($('.fixed-plugin .dropdown').hasClass('show-dropdown')) {
+                $('.fixed-plugin .dropdown').addClass('open');
+            }
+        }
+        $('.fixed-plugin a').click(function (event) {
+            // Alex if we click on switch, stop propagation of the event, so the dropdown will not be hide, otherwise we set the  section active
+            if ($(this).hasClass('switch-trigger')) {
+                if (event.stopPropagation) {
+                    event.stopPropagation();
+                }
+                else if (window.event) {
+                    window.event.cancelBubble = true;
+                }
+            }
+        });
+        $('.fixed-plugin .background-color span').click(function () {
+            $(this).siblings().removeClass('active');
+            $(this).addClass('active');
+            var new_color = $(this).data('color');
+            if ($sidebar.length != 0) {
+                $sidebar.attr('data-background-color', new_color);
+            }
+            if ($off_canvas_sidebar.length != 0) {
+                $off_canvas_sidebar.attr('data-background-color', new_color);
+            }
+        });
+        $('.fixed-plugin .active-color span').click(function () {
+            $(this).siblings().removeClass('active');
+            $(this).addClass('active');
+            var new_color = $(this).data('color');
+            if ($sidebar.length != 0) {
+                $sidebar.attr('data-active-color', new_color);
+            }
+            if ($off_canvas_sidebar.length != 0) {
+                $off_canvas_sidebar.attr('data-active-color', new_color);
+            }
+        });
+    };
+    return FixedPluginComponent;
+}());
+FixedPluginComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'fixedplugin-cmp',
+        template: __webpack_require__("../../../../../src/app/shared/fixedplugin/fixedplugin.component.html")
+    })
+], FixedPluginComponent);
+
+//# sourceMappingURL=fixedplugin.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/shared/fixedplugin/fixedplugin.module.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FixedPluginModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("../../../common/@angular/common.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__fixedplugin_component__ = __webpack_require__("../../../../../src/app/shared/fixedplugin/fixedplugin.component.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var FixedPluginModule = (function () {
+    function FixedPluginModule() {
+    }
+    return FixedPluginModule;
+}());
+FixedPluginModule = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        imports: [__WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* RouterModule */], __WEBPACK_IMPORTED_MODULE_1__angular_common__["CommonModule"]],
+        declarations: [__WEBPACK_IMPORTED_MODULE_3__fixedplugin_component__["a" /* FixedPluginComponent */]],
+        exports: [__WEBPACK_IMPORTED_MODULE_3__fixedplugin_component__["a" /* FixedPluginComponent */]]
+    })
+], FixedPluginModule);
+
+//# sourceMappingURL=fixedplugin.module.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/shared/footer/footer.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<footer class=\"footer\">\n    <div class=\"container-fluid\">\n        <nav class=\"pull-left\">\n            <ul>\n\n                <li>\n                    <a href=\"https://www.creative-tim.com\">\n                        Creative Tim\n                    </a>\n                </li>\n                <li>\n                    <a href=\"http://blog.creative-tim.com\">\n                       Blog\n                    </a>\n                </li>\n                <li>\n                    <a href=\"https://www.creative-tim.com/license\">\n                        Licenses\n                    </a>\n                </li>\n            </ul>\n        </nav>\n        <div class=\"copyright pull-right\">\n            &copy; {{test | date: 'yyyy'}}, made with <i class=\"fa fa-heart heart\"></i> by <a href=\"https://www.creative-tim.com\">Creative Tim</a>\n        </div>\n    </div>\n</footer>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/shared/footer/footer.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FooterComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var FooterComponent = (function () {
+    function FooterComponent() {
+        this.test = new Date();
+    }
+    return FooterComponent;
+}());
+FooterComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'footer-cmp',
+        template: __webpack_require__("../../../../../src/app/shared/footer/footer.component.html")
+    })
+], FooterComponent);
+
+//# sourceMappingURL=footer.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/shared/footer/footer.module.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FooterModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("../../../common/@angular/common.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__footer_component__ = __webpack_require__("../../../../../src/app/shared/footer/footer.component.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var FooterModule = (function () {
+    function FooterModule() {
+    }
+    return FooterModule;
+}());
+FooterModule = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        imports: [__WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* RouterModule */], __WEBPACK_IMPORTED_MODULE_1__angular_common__["CommonModule"]],
+        declarations: [__WEBPACK_IMPORTED_MODULE_3__footer_component__["a" /* FooterComponent */]],
+        exports: [__WEBPACK_IMPORTED_MODULE_3__footer_component__["a" /* FooterComponent */]]
+    })
+], FooterModule);
+
+//# sourceMappingURL=footer.module.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/shared/navbar/navbar.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<nav class=\"navbar navbar-default\">\n    <div class=\"container-fluid\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle\" (click)=\"sidebarToggle()\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar bar1\"></span>\n                <span class=\"icon-bar bar2\"></span>\n                <span class=\"icon-bar bar3\"></span>\n            </button>\n            <!-- <a class=\"navbar-brand\" href=\"#\">{{getTitle()}}</a> -->\n            <img src=\"../../../assets/img/logo@2x.png\" style=\"        padding: 1px;\n                margin-top: 16%;\n                margin-bottom: 13%;height: 70px;\n            \" alt=\"\">\n        </div>\n        <div class=\"collapse navbar-collapse\">\n            <ul class=\"nav navbar-nav navbar-right\">\n                <li>\n                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n\n                        <p style=\"font-size: 14px;\">Friday, Mar 10th,\n                               2019 \n                               <i class=\"ti-calendar\" style=\"color: #46C1D1;    font-size: 20px;\n                            margin-top: -8px;\"></i>   09:15 AM\n                            <i style=\"color: #46C1D1;  font-size: 20px;\n                            margin-top: -8px;\" class=\"ti-time\"></i>\n                        </p>\n                    </a>\n                </li>\n                <li>\n                    <input type=\"search\" class=\"form-control search\" placeholder=\"search\">\n                    <i class=\"ti-search searchicon\" ></i>\n                </li>\n                <li class=\"dropdown\">\n                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n                        <i class=\"ti-bell\" style=\"color: #46C1D1; font-size: 20px;\n                        margin-top: -8px;\"></i>\n\n                    </a>\n                    <ul class=\"dropdown-menu\">\n                        <li>\n                            <a href=\"#\">Notification 1</a>\n                        </li>\n                        <li>\n                            <a href=\"#\">Notification 2</a>\n                        </li>\n                        <li>\n                            <a href=\"#\">Notification 3</a>\n                        </li>\n                        <li>\n                            <a href=\"#\">Notification 4</a>\n                        </li>\n                        <li>\n                            <a href=\"#\">Another notification</a>\n                        </li>\n                    </ul>\n                </li>\n\n                <li class=\"username\">\n                    M\n                </li>\n            </ul>\n\n        </div>\n    </div>\n</nav>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/shared/navbar/navbar.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NavbarComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sidebar_sidebar_component__ = __webpack_require__("../../../../../src/app/sidebar/sidebar.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common__ = __webpack_require__("../../../common/@angular/common.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var NavbarComponent = (function () {
+    function NavbarComponent(location, renderer, element, router) {
+        this.renderer = renderer;
+        this.element = element;
+        this.router = router;
+        this.location = location;
+        this.nativeElement = element.nativeElement;
+        this.sidebarVisible = false;
+    }
+    NavbarComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.listTitles = __WEBPACK_IMPORTED_MODULE_1__sidebar_sidebar_component__["a" /* ROUTES */].filter(function (listTitle) { return listTitle; });
+        var navbar = this.element.nativeElement;
+        this.toggleButton = navbar.getElementsByClassName('navbar-toggle')[0];
+        this.router.events.subscribe(function (event) {
+            _this.sidebarClose();
+        });
+    };
+    NavbarComponent.prototype.getTitle = function () {
+        var titlee = window.location.pathname;
+        titlee = titlee.substring(1);
+        for (var item = 0; item < this.listTitles.length; item++) {
+            if (this.listTitles[item].path === titlee) {
+                return this.listTitles[item].title;
+            }
+        }
+        return 'Dashboard';
+    };
+    NavbarComponent.prototype.sidebarToggle = function () {
+        var $toggle = document.getElementsByClassName('navbar-toggler')[0];
+        if (this.sidebarVisible === false) {
+            this.sidebarOpen();
+        }
+        else {
+            this.sidebarClose();
+        }
+    };
+    NavbarComponent.prototype.sidebarOpen = function () {
+        var toggleButton = this.toggleButton;
+        var body = document.getElementsByTagName('body')[0];
+        setTimeout(function () {
+            toggleButton.classList.add('toggled');
+        }, 500);
+        body.classList.add('nav-open');
+        this.sidebarVisible = true;
+    };
+    ;
+    NavbarComponent.prototype.sidebarClose = function () {
+        var body = document.getElementsByTagName('body')[0];
+        this.toggleButton.classList.remove('toggled');
+        this.sidebarVisible = false;
+        body.classList.remove('nav-open');
+    };
+    ;
+    return NavbarComponent;
+}());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])("navbar-cmp"),
+    __metadata("design:type", Object)
+], NavbarComponent.prototype, "button", void 0);
+NavbarComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'navbar-cmp',
+        template: __webpack_require__("../../../../../src/app/shared/navbar/navbar.component.html")
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__angular_common__["Location"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_common__["Location"]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["Renderer"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["Renderer"]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === "function" && _d || Object])
+], NavbarComponent);
+
+var _a, _b, _c, _d;
+//# sourceMappingURL=navbar.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/shared/navbar/navbar.module.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NavbarModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("../../../common/@angular/common.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__navbar_component__ = __webpack_require__("../../../../../src/app/shared/navbar/navbar.component.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var NavbarModule = (function () {
+    function NavbarModule() {
+    }
+    return NavbarModule;
+}());
+NavbarModule = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        imports: [__WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* RouterModule */], __WEBPACK_IMPORTED_MODULE_1__angular_common__["CommonModule"]],
+        declarations: [__WEBPACK_IMPORTED_MODULE_3__navbar_component__["a" /* NavbarComponent */]],
+        exports: [__WEBPACK_IMPORTED_MODULE_3__navbar_component__["a" /* NavbarComponent */]]
+    })
+], NavbarModule);
+
+//# sourceMappingURL=navbar.module.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/sidebar/sidebar.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "\n<div class=\"sidebar-wrapper\">\n    \n    <ul class=\"nav\">\n            <li *ngIf=\"isNotMobileMenu()\">\n                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n                    <i class=\"ti-panel\"></i>\n\t\t\t\t\t<p>Stats</p>\n                </a>\n            </li>\n            <li class=\"dropdown\" *ngIf=\"isNotMobileMenu()\">\n                  <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n                        <i class=\"ti-bell\"></i>\n                        <p class=\"notification\">5</p>\n    \t\t\t\t\t<p>Notifications</p>\n    \t\t\t\t\t<b class=\"caret\"></b>\n                  </a>\n                  <ul class=\"dropdown-menu\">\n                    <li><a href=\"#\">Notification 1</a></li>\n                    <li><a href=\"#\">Notification 2</a></li>\n                    <li><a href=\"#\">Notification 3</a></li>\n                    <li><a href=\"#\">Notification 4</a></li>\n                    <li><a href=\"#\">Another notification</a></li>\n                  </ul>\n            </li>\n            <li *ngIf=\"isNotMobileMenu()\">\n                <a href=\"#\">\n\t\t\t\t\t<i class=\"ti-settings\"></i>\n\t\t\t\t\t<p>Settings</p>\n                </a>\n            </li>\n            <li class=\"divider\" *ngIf=\"isNotMobileMenu()\"></li>\n        <li *ngFor=\"let menuItem of menuItems\" routerLinkActive=\"active\" class=\"{{menuItem.class}}\">\n            <a [routerLink]=\"[menuItem.path]\">\n                <img src=\"../../assets/img/{{menuItem.image}}.svg\"/>\n                <p style=\"color: transparent\">.</p>\n            </a>\n        </li>\n    </ul>\n</div>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/sidebar/sidebar.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ROUTES; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return SidebarComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var ROUTES = [
+    { path: 'dashboard', title: 'Dashboard', image: 'home', class: '' },
+    { path: 'user', title: 'User Profile', image: 'bell', class: '' },
+    { path: 'table', title: 'Table List', image: 'accident', class: '' },
+    { path: 'typography', title: 'Typography', image: 'parking', class: '' },
+    { path: 'icons', title: 'Icons', image: 'vcle', class: '' },
+    { path: 'maps', title: 'Maps', image: 'env', class: '' },
+    { path: 'notifications', title: 'Notifications', image: 'elct', class: '' },
+    { path: 'upgrade', title: 'Upgrade to PRO', image: 'cctv', class: '' },
+];
+var SidebarComponent = (function () {
+    function SidebarComponent() {
+    }
+    SidebarComponent.prototype.ngOnInit = function () {
+        this.menuItems = ROUTES.filter(function (menuItem) { return menuItem; });
+    };
+    SidebarComponent.prototype.isNotMobileMenu = function () {
+        if ($(window).width() > 991) {
+            return false;
+        }
+        return true;
+    };
+    return SidebarComponent;
+}());
+SidebarComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'sidebar-cmp',
+        template: __webpack_require__("../../../../../src/app/sidebar/sidebar.component.html"),
+    })
+], SidebarComponent);
+
+//# sourceMappingURL=sidebar.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/sidebar/sidebar.module.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SidebarModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("../../../common/@angular/common.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__sidebar_component__ = __webpack_require__("../../../../../src/app/sidebar/sidebar.component.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var SidebarModule = (function () {
+    function SidebarModule() {
+    }
+    return SidebarModule;
+}());
+SidebarModule = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        imports: [__WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* RouterModule */], __WEBPACK_IMPORTED_MODULE_1__angular_common__["CommonModule"]],
+        declarations: [__WEBPACK_IMPORTED_MODULE_3__sidebar_component__["b" /* SidebarComponent */]],
+        exports: [__WEBPACK_IMPORTED_MODULE_3__sidebar_component__["b" /* SidebarComponent */]]
+    })
+], SidebarModule);
+
+//# sourceMappingURL=sidebar.module.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/table/table.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container-fluid dashboard waste\">\n    <p style=\"    color: #555555;\n    font-size: 13px;\">View data for 10-13-2019 to 10-20-2019</p>\n    <div class=\"row\">\n        <div class=\"col-lg-12 col-sm-12\">\n            <div class=\"card\">\n                <div class=\"content\" style=\"display: -webkit-box;\">\n\n                    <div class=\"col-md-6 col-lg-3 col-sm-12 customgrid\" style=\"background-image: linear-gradient(to right , #00E4B4 , #00CC84);    margin-left: 8%;\">\n\n                        <div class=\"header col-lg-12\">\n                            <div class=\"col-lg-6 floatCenter\">\n                                <span class=\"floatCenter\">Total Wet Waste</span>\n                                <h4 class=\"title\">112Kg</h4>\n\n                            </div>\n                            <div class=\"col-lg-6 floatRight\">\n                                <img src=\"../../assets/img/wetwaste.svg\" alt=\"\" class=\"inImage\">\n                            </div>\n                        </div>\n\n\n                    </div>\n                    <div class=\"col-md-6 col-lg-3 col-sm-12 customgrid\" style=\"background-image: linear-gradient(to right , #FFBD9B , #FF9160);\">\n\n                        <div class=\"header col-lg-12\">\n                            <div class=\"col-lg-6 floatCenter\">\n                                <span class=\"floatCenter\">Total Wet Waste</span>\n                                <h4 class=\"title\">112Kg</h4>\n\n                            </div>\n                            <div class=\"col-lg-6 floatRight\">\n                                <img src=\"../../assets/img/drywaste.svg\" alt=\"\" class=\"inImage\">\n                            </div>\n                        </div>\n\n\n                    </div>\n                    <div class=\"col-md-6 col-lg-3 col-sm-12 customgrid\" style=\"background-image: linear-gradient(to right , #FF96A9 , #FF5170);\">\n\n                        <div class=\"header col-lg-12\">\n                            <div class=\"col-lg-6 floatCenter\">\n                                <span class=\"floatCenter\">Total Wet Waste</span>\n                                <h4 class=\"title\">112Kg</h4>\n\n                            </div>\n                            <div class=\"col-lg-6 floatRight\">\n                                <img src=\"../../assets/img/rejectedw.svg\" alt=\"\" class=\"inImage\">\n                            </div>\n                        </div>\n\n\n                    </div>\n                    <div class=\"col-md-6 col-lg-3 col-sm-12 customgrid\" style=\"background-image: linear-gradient(to right , #00CDCE , #00A9AA);\">\n\n                        <div class=\"header col-lg-12\">\n                            <div class=\"col-lg-6 floatCenter\">\n                                <span class=\"floatCenter\">Total Wet Waste</span>\n                                <h4 class=\"title\">112Kg</h4>\n\n                            </div>\n                            <div class=\"col-lg-6 floatRight\">\n                                <img src=\"../../assets/img/totalw.svg\" alt=\"\" class=\"inImage\" style=\"    margin-top: 5%;\">\n                            </div>\n                        </div>\n\n\n                    </div>\n                </div>\n\n            </div>\n\n        </div>\n    </div>\n\n    <div class=\"row\">\n\n        <div class=\"col-md-12 col-lg-12 col-sm-12\">\n            <div class=\"col-lg-12\">\n                <div class=\"card parkingcard\" style=\"    padding: 0;\">\n                    <div class=\"content\">\n                        <div class=\"row\">\n\n                            <div id=\"chartdiv\" [style.width.%]=\"100\" [style.height.px]=\"245\"></div>\n\n                        </div>\n\n                    </div>\n                </div>\n            </div>\n\n        </div>\n        <div class=\"col-md-12 col-lg-12 col-sm-12\">\n            <div class=\"col-lg-12\">\n                <div class=\"card parkingcard\" style=\"    padding: 0;\">\n                    <div class=\"content\">\n                        <div class=\"row\">\n                            <table class=\"table table-striped logger\">\n                                <thead>\n                                    <tr>\n                                        <th>Login ID</th>\n                                        <th>Type</th>\n                                        <th>Location</th>\n                                        <th>Quantity</th>\n                                        <th>Collected by</th>\n                                        <th>Added on</th>\n                                        <th>Recycled Status</th>\n                                    </tr>\n                                </thead>\n                                <tbody>\n                                    <tr>\n                                        <td>44546</td>\n                                        <td class=\"green\">Wet Waste</td>\n                                        <td>534 Adonis Ports</td>\n                                        <td>100 Kgs</td>\n                                        <td>Saliy Oliver</td>\n                                        <td>31 Dec 2018</td>\n                                        <td>\n                                            <span>On-Going</span>\n                                        </td>\n                                    </tr>\n                                    <tr>\n                                        <td>44546</td>\n                                        <td class=\"green\">Wet Waste</td>\n                                        <td>534 Adonis Ports</td>\n                                        <td>100 Kgs</td>\n                                        <td>Saliy Oliver</td>\n                                        <td>31 Dec 2018</td>\n                                        <td>\n                                            <span>On-Going</span>\n                                        </td>\n                                    </tr>\n                                    <tr>\n                                        <td>44546</td>\n                                        <td class=\"green\">Wet Waste</td>\n                                        <td>534 Adonis Ports</td>\n                                        <td>100 Kgs</td>\n                                        <td>Saliy Oliver</td>\n                                        <td>31 Dec 2018</td>\n                                        <td>\n                                            <span>On-Going</span>\n                                        </td>\n                                    </tr>\n                                    <tr>\n                                        <td>44546</td>\n                                        <td class=\"green\">Wet Waste</td>\n                                        <td>534 Adonis Ports</td>\n                                        <td>100 Kgs</td>\n                                        <td>Saliy Oliver</td>\n                                        <td>31 Dec 2018</td>\n                                        <td>\n                                            <span>On-Going</span>\n                                        </td>\n                                    </tr>\n                                    <tr>\n                                        <td>44546</td>\n                                        <td class=\"green\">Wet Waste</td>\n                                        <td>534 Adonis Ports</td>\n                                        <td>100 Kgs</td>\n                                        <td>Saliy Oliver</td>\n                                        <td>31 Dec 2018</td>\n                                        <td>\n                                            <span>On-Going</span>\n                                        </td>\n                                    </tr>\n                                    <tr>\n                                        <td>44546</td>\n                                        <td class=\"green\">Wet Waste</td>\n                                        <td>534 Adonis Ports</td>\n                                        <td>100 Kgs</td>\n                                        <td>Saliy Oliver</td>\n                                        <td>31 Dec 2018</td>\n                                        <td>\n                                            <span>On-Going</span>\n                                        </td>\n                                    </tr>\n                                    <tr>\n                                        <td>44546</td>\n                                        <td class=\"green\">Wet Waste</td>\n                                        <td>534 Adonis Ports</td>\n                                        <td>100 Kgs</td>\n                                        <td>Saliy Oliver</td>\n                                        <td>31 Dec 2018</td>\n                                        <td>\n                                            <span>On-Going</span>\n                                        </td>\n                                    </tr>\n                                    <tr>\n                                        <td>44546</td>\n                                        <td class=\"green\">Wet Waste</td>\n                                        <td>534 Adonis Ports</td>\n                                        <td>100 Kgs</td>\n                                        <td>Saliy Oliver</td>\n                                        <td>31 Dec 2018</td>\n                                        <td>\n                                            <span>On-Going</span>\n                                        </td>\n                                    </tr>\n                                    <tr>\n                                        <td>44546</td>\n                                        <td class=\"green\">Wet Waste</td>\n                                        <td>534 Adonis Ports</td>\n                                        <td>100 Kgs</td>\n                                        <td>Saliy Oliver</td>\n                                        <td>31 Dec 2018</td>\n                                        <td>\n                                            <span>On-Going</span>\n                                        </td>\n                                    </tr>\n                                    <tr>\n                                        <td>44546</td>\n                                        <td class=\"green\">Wet Waste</td>\n                                        <td>534 Adonis Ports</td>\n                                        <td>100 Kgs</td>\n                                        <td>Saliy Oliver</td>\n                                        <td>31 Dec 2018</td>\n                                        <td>\n                                            <span>On-Going</span>\n                                        </td>\n                                    </tr>\n                                    <tr>\n                                        <td>44546</td>\n                                        <td class=\"green\">Wet Waste</td>\n                                        <td>534 Adonis Ports</td>\n                                        <td>100 Kgs</td>\n                                        <td>Saliy Oliver</td>\n                                        <td>31 Dec 2018</td>\n                                        <td>\n                                            <span>On-Going</span>\n                                        </td>\n                                    </tr>\n\n\n\n\n\n                                </tbody>\n                            </table>\n\n                        </div>\n\n                    </div>\n                </div>\n            </div>\n\n        </div>\n\n        <div class=\"col-lg-12 col-sm-12\">\n            <div class=\"card\">\n                <div class=\"content\" style=\"display: -webkit-box;\">\n\n                    <div class=\"col-md-6 col-lg-3 col-sm-12 customgrid\" style=\"background-image: linear-gradient(to right , #00E4B4 , #00CC84);    margin-left: 8%;\">\n\n                        <div class=\"header col-lg-12\">\n                            <div class=\"col-lg-6 floatCenter\">\n                                <span class=\"floatCenter\">Total Operating Vehicle</span>\n                                <h4 class=\"title\">72</h4>\n\n                            </div>\n                            <div class=\"col-lg-6 floatRight\">\n                                <img src=\"../../assets/img/totalov.svg\" alt=\"\" class=\"inImage\">\n                            </div>\n                        </div>\n\n\n                    </div>\n                    <div class=\"col-md-6 col-lg-3 col-sm-12 customgrid\" style=\"background-image: linear-gradient(to right , #FFBD9B , #FF9160);\">\n\n                        <div class=\"header col-lg-12\">\n                            <div class=\"col-lg-6 floatCenter\">\n                                <span class=\"floatCenter\">Total Standby Vehicle</span>\n                                <h4 class=\"title\">11</h4>\n\n                            </div>\n                            <div class=\"col-lg-6 floatRight\">\n                                <img src=\"../../assets/img/totalstatnd.svg\" alt=\"\" class=\"inImage\">\n                            </div>\n                        </div>\n\n\n                    </div>\n                    <div class=\"col-md-6 col-lg-3 col-sm-12 customgrid\" style=\"background-image: linear-gradient(to right , #FF96A9 , #FF5170);\">\n\n                        <div class=\"header col-lg-12\">\n                            <div class=\"col-lg-6 floatCenter\">\n                                <span class=\"floatCenter\">Under Maintenance</span>\n                                <h4 class=\"title\">11</h4>\n\n                            </div>\n                            <div class=\"col-lg-6 floatRight\">\n                                <img src=\"../../assets/img/carmainrain.svg\" alt=\"\" class=\"inImage\">\n                            </div>\n                        </div>\n\n\n                    </div>\n                    <div class=\"col-md-6 col-lg-3 col-sm-12 customgrid\" style=\"background-image: linear-gradient(to right , #00CDCE , #00A9AA);\">\n\n                        <div class=\"header col-lg-12\">\n                            <div class=\"col-lg-6 floatCenter\">\n                                <span class=\"floatCenter\">Total Vehicle</span>\n                                <h4 class=\"title\">14</h4>\n\n                            </div>\n                            <div class=\"col-lg-6 floatRight\">\n                                <img src=\"../../assets/img/totalw.svg\" alt=\"\" class=\"inImage\" style=\"    margin-top: 5%;\">\n                            </div>\n                        </div>\n\n\n                    </div>\n                </div>\n\n            </div>\n\n        </div>\n    </div>\n</div>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/table/table.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TableComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var TableComponent = (function () {
+    function TableComponent() {
+    }
+    TableComponent.prototype.ngOnInit = function () {
+    };
+    return TableComponent;
+}());
+TableComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'table-cmp',
+        template: __webpack_require__("../../../../../src/app/table/table.component.html")
+    })
+], TableComponent);
+
+//# sourceMappingURL=table.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/typography/typography.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container-fluid dashboard\">\n    <div class=\"row\">\n        <div class=\"col-lg-12 col-sm-12 \">\n            <div class=\"card\">\n                <div class=\"content\" style=\"padding: 0;\">\n                    <ngui-map zoom=\"20\" center=\"40.748817,-73.985428\">\n                        <marker [position]=\"[40.748817,-73.985428]\"></marker>\n                        <map-circle [center]=\"{lat: 40.748817, lng: -73.985428}\">\n                        </map-circle>\n                    </ngui-map>\n                </div>\n            </div>\n        </div>\n\n\n    </div>\n\n    <div class=\"row\">\n\n        <div class=\"col-md-6 col-lg-6 col-sm-12\">\n            <div class=\"col-lg-12\">\n                <div class=\"card parkingcard\" style=\"padding-top: 1%;padding-bottom: 1%;\">\n                    <div class=\"content\">\n                        <div class=\"row\">\n\n                            <table class=\"table customtable1 customtable2 parkingtable2\">\n                                <tr>\n                                    <td style=\"    width: 38%;\">\n\n                                        <img src=\"../../assets/img/piechart.svg\" alt=\"\">\n                                        <span class=\"customspan1\">15</span>\n                                        <br>\n                                        <span class=\"customspan2\" style=\"margin-left: -25px;\">TOTAL LIGHTS</span>\n\n                                    </td>\n                                    <td>\n                                        <p>\n                                            <span class=\"green\">0</span>\n                                            <br>\n                                            <br>\n                                            <span class=\"customspan1\">15</span>\n                                            <br>\n                                            <br>\n                                            <span class=\"customspan2\">LIGHTS ON</span>\n                                        </p>\n                                    </td>\n                                    <td>\n                                        <p>\n                                            <span class=\"orange\">0</span>\n                                            <br>\n                                            <br>\n                                            <span class=\"customspan1\">6300</span>\n                                            <br>\n                                            <br>\n                                            <span class=\"customspan2\">LIGHTS OFF</span>\n                                        </p>\n                                    </td>\n                                    <td>\n                                        <p>\n                                            <span class=\"green\" style=\"background: transparent\">0</span>\n                                            <br>\n                                            <br>\n                                            <span class=\"customspan1\">10</span>\n                                            <br>\n                                            <br>\n                                            <span class=\"customspan2\">NOT WORKING</span>\n                                        </p>\n                                    </td>\n                                </tr>\n\n                            </table>\n\n                        </div>\n\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-lg-6\">\n                <div class=\"card parkingcard\">\n\n                    <div class=\"row\">\n                        <div class=\"col-xs-7 customNumbers\">\n                            <div class=\"numbers\">\n                                <p>WALL LAMP</p>\n\n                            </div>\n                        </div>\n                        <div class=\"col-xs-5 customicons\">\n\n                            <img src=\"../../assets/img/lamp.svg\" alt=\"\">\n\n                        </div>\n                        <table class=\"table customtable1 parkingtable\">\n                            <tr>\n                                <td>\n                                    <div class=\"card\">\n                                        <div class=\"card-header numberheader\">102</div>\n                                        <div class=\"card-footer numberfooter\">ON</div>\n                                    </div>\n                                </td>\n                                <td>\n                                    <div class=\"card\">\n                                        <div class=\"card-header numberheader\">102</div>\n                                        <div class=\"card-footer numberfooter\" style=\"background: #ff2274de;\">OFF</div>\n                                    </div>\n                                </td>\n                                <td>\n                                    <div class=\"card\">\n                                        <div class=\"card-header numberheader\">102</div>\n                                        <div class=\"card-footer numberfooter\" style=\"background: grey;\">NOT WORKING</div>\n                                    </div>\n                                </td>\n\n                            </tr>\n                        </table>\n\n\n                    </div>\n\n                </div>\n            </div>\n            <div class=\"col-lg-6\">\n                <div class=\"card parkingcard\">\n\n                    <div class=\"row\">\n                        <div class=\"col-xs-7 customNumbers\">\n                            <div class=\"numbers\">\n                                <p>TUNNEL LAMP</p>\n\n                            </div>\n                        </div>\n                        <div class=\"col-xs-5 customicons\">\n\n                            <img src=\"../../assets/img/tunnel.svg\" alt=\"\">\n\n                        </div>\n                        <table class=\"table customtable1 parkingtable\">\n                            <tr>\n                                <td>\n                                    <div class=\"card\">\n                                        <div class=\"card-header numberheader\">102</div>\n                                        <div class=\"card-footer numberfooter\">ON</div>\n                                    </div>\n                                </td>\n                                <td>\n                                    <div class=\"card\">\n                                        <div class=\"card-header numberheader\">102</div>\n                                        <div class=\"card-footer numberfooter\" style=\"background: #ff2274de;\">OFF</div>\n                                    </div>\n                                </td>\n                                <td>\n                                    <div class=\"card\">\n                                        <div class=\"card-header numberheader\">102</div>\n                                        <div class=\"card-footer numberfooter\" style=\"background: grey;\">NOT WORKING</div>\n                                    </div>\n                                </td>\n\n                            </tr>\n                        </table>\n\n\n                    </div>\n\n                </div>\n            </div>\n            <div class=\"col-lg-6\">\n                <div class=\"card parkingcard\">\n\n                    <div class=\"row\">\n                        <div class=\"col-xs-7 customNumbers\">\n                            <div class=\"numbers\">\n                                <p>FLOOD LIGHTS</p>\n\n                            </div>\n                        </div>\n                        <div class=\"col-xs-5 customicons\">\n\n                            <img src=\"../../assets/img/light.svg\" alt=\"\">\n\n                        </div>\n                        <table class=\"table customtable1 parkingtable\">\n                            <tr>\n                                <td>\n                                    <div class=\"card\">\n                                        <div class=\"card-header numberheader\">102</div>\n                                        <div class=\"card-footer numberfooter\">ON</div>\n                                    </div>\n                                </td>\n                                <td>\n                                    <div class=\"card\">\n                                        <div class=\"card-header numberheader\">102</div>\n                                        <div class=\"card-footer numberfooter\" style=\"background: #ff2274de;\">OFF</div>\n                                    </div>\n                                </td>\n                                <td>\n                                    <div class=\"card\">\n                                        <div class=\"card-header numberheader\">102</div>\n                                        <div class=\"card-footer numberfooter\" style=\"background: grey;\">NOT WORKING</div>\n                                    </div>\n                                </td>\n\n                            </tr>\n                        </table>\n\n\n                    </div>\n\n                </div>\n            </div>\n            <div class=\"col-lg-6\">\n                <div class=\"card parkingcard\">\n\n                    <div class=\"row\">\n                        <div class=\"col-xs-7 customNumbers\">\n                            <div class=\"numbers\">\n                                <p>UNDER GROUND LAMP</p>\n\n                            </div>\n                        </div>\n                        <div class=\"col-xs-5 customicons\">\n\n                            <img src=\"../../assets/img/lamp2.svg\" alt=\"\">\n\n                        </div>\n                        <table class=\"table customtable1 parkingtable\">\n                            <tr>\n                                <td>\n                                    <div class=\"card\">\n                                        <div class=\"card-header numberheader\">102</div>\n                                        <div class=\"card-footer numberfooter\">ON</div>\n                                    </div>\n                                </td>\n                                <td>\n                                    <div class=\"card\">\n                                        <div class=\"card-header numberheader\">102</div>\n                                        <div class=\"card-footer numberfooter\" style=\"background: #ff2274de;\">OFF</div>\n                                    </div>\n                                </td>\n                                <td>\n                                    <div class=\"card\">\n                                        <div class=\"card-header numberheader\">102</div>\n                                        <div class=\"card-footer numberfooter\" style=\"background: grey;\">NOT WORKING</div>\n                                    </div>\n                                </td>\n\n                            </tr>\n                        </table>\n\n\n                    </div>\n\n                </div>\n            </div>\n\n\n        </div>\n\n        <div class=\"col-md-6 col-lg-3 col-sm-12\">\n            <div class=\"card parkingcard\">\n\n                <div class=\"row\">\n                    <div class=\"col-xs-7 customNumbers\">\n                        <div class=\"numbers\">\n                            <p>STREET LAMP</p>\n\n                        </div>\n                    </div>\n                    <div class=\"col-xs-5 customicons\">\n\n                        <img src=\"../../assets/img/street.svg\" alt=\"\">\n\n                    </div>\n                    <table class=\"table customtable1 parkingtable\">\n                        <tr>\n                            <td>\n                                <div class=\"card\">\n                                    <div class=\"card-header numberheader\">102</div>\n                                    <div class=\"card-footer numberfooter\">ON</div>\n                                </div>\n                            </td>\n                            <td>\n                                <div class=\"card\">\n                                    <div class=\"card-header numberheader\">102</div>\n                                    <div class=\"card-footer numberfooter\" style=\"background: #ff2274de;\">OFF</div>\n                                </div>\n                            </td>\n                            <td>\n                                <div class=\"card\">\n                                    <div class=\"card-header numberheader\">102</div>\n                                    <div class=\"card-footer numberfooter\" style=\"background: grey;\">NOT WORKING</div>\n                                </div>\n                            </td>\n\n                        </tr>\n                    </table>\n\n\n                </div>\n\n            </div>\n            <div class=\"card parkingcard\" style=\"    margin-top: 3%;\">\n\n                <div class=\"row\">\n                    <div class=\"col-xs-7 customNumbers\">\n                        <div class=\"numbers\">\n                            <p>LUMINOSITY</p>\n\n                        </div>\n                    </div>\n                    <div class=\"col-xs-5 customicons\">\n\n                        <img src=\"../../assets/img/street.svg\" alt=\"\">\n\n                    </div>\n                    <table class=\"table customtable1 parkingtable\">\n                        <tr>\n                            <td>\n                                \n                            </td>\n\n\n                        </tr>\n                    </table>\n                    <div id=\"chartdiv\" [style.width.%]=\"110\" [style.height.px]=\"245\"></div>\n\n\n                </div>\n\n            </div>\n        </div>\n        <div class=\"col-md-6 col-lg-3 col-sm-12\">\n            <div class=\"card\">\n                <div class=\"header\">\n                    <h4 class=\"title\">Car Counter</h4>\n                </div>\n\n                <div class=\"content\">\n                    <table class=\"table customtable1 parkingtable\">\n                        <tr>\n                            <td>\n                                <input type=\"radio\" name=\"manual\" style=\"margin-right: 1%;\"> Manual\n                            </td>\n                            <td>\n                                <input type=\"radio\" name=\"manual\" style=\"margin-right: 1%;\"> Automated\n                            </td>\n\n\n                        </tr>\n                    </table>\n\n\n                    <div class=\"card\">\n                        <div class=\"card-header \"></div>\n                        <div class=\"card-footer\" style=\"        text-align: center;\n                        margin-top: 3%;\n                        margin-bottom: 0;\n                        padding-top: 10%;\n                        padding-bottom: 10%;\">\n                            <span>OFF</span>\n                            <label class=\"switch\">\n                                <input type=\"checkbox\" checked>\n                                <span class=\"slider round\"></span>\n                            </label>\n                            <span>ON</span>\n                            <br>\n                            <span class=\"extraSpan\">Node Control</span>\n                        </div>\n\n\n                        <table class=\"table spantable\">\n                            <tr>\n                                <td>Time of Day OFF</td>\n                                <td>07:30 am</td>\n                                <td>\n                                    <img src=\"../../assets/img/time.svg\" alt=\"\"> </td>\n                            </tr>\n                            <tr>\n                                <td>Time of Day OFF</td>\n                                <td>07:30 am</td>\n                                <td>\n                                    <img src=\"../../assets/img/time.svg\" alt=\"\"> </td>\n                            </tr>\n                            <p class=\"footerP\"> DAY WISE SETTING </p>\n                        <div class=\"col-lg-12\">\n                            <div class=\"col-lg-6\">\n                                <label class=\"container2\">Saturday\n                                    <input type=\"checkbox\" checked=\"checked\">\n                                    <span class=\"checkmark\"></span>\n                                </label>\n                                <label class=\"container2\">Sunday\n                                    <input type=\"checkbox\">\n                                    <span class=\"checkmark\"></span>\n                                </label>\n                                <label class=\"container2\">Monday\n                                    <input type=\"checkbox\">\n                                    <span class=\"checkmark\"></span>\n                                </label>\n                                <label class=\"container2\">Tuesday\n                                    <input type=\"checkbox\">\n                                    <span class=\"checkmark\"></span>\n                                </label>\n                            </div>\n                            <div class=\"col-lg-6\">\n                                <label class=\"container2\">Wednesday\n                                    <input type=\"checkbox\">\n                                    <span class=\"checkmark\"></span>\n                                </label>\n                                <label class=\"container2\">Thursday\n                                    <input type=\"checkbox\">\n                                    <span class=\"checkmark\"></span>\n                                </label>\n                                <label class=\"container2\">Friday\n                                    <input type=\"checkbox\">\n                                    <span class=\"checkmark\"></span>\n                                </label>\n                            </div>\n\n                        </div>\n                        </table>\n\n                        \n\n                    </div>\n                    <!-- <div class=\"container\">\n                        <input type=\"radio\" class=\"hidden\" id=\"input1\" name=\"inputs\">\n                        <label class=\"entry\" for=\"input1\">\n                            <div class=\"circle\"></div>\n                            <div class=\"entry-label\">Manual</div>\n                        </label>\n                        <input type=\"radio\" class=\"hidden\" id=\"input2\" name=\"inputs\">\n                        <label class=\"entry\" for=\"input2\">\n                            <div class=\"circle\"></div>\n                            <div class=\"entry-label\">Automated</div>\n                        </label>\n                        <div class=\"highlight\"></div>\n                        <div class=\"overlay\"></div>\n                    </div> -->\n\n                </div>\n            </div>\n        </div>\n\n    </div>\n\n\n</div>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/typography/typography.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TypographyComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+// import { AmChartsService, AmChart } from "@amcharts/amcharts3-angular";
+var TypographyComponent = (function () {
+    function TypographyComponent() {
+    }
+    //     title = 'app';
+    //   private chart: AmChart;
+    //   public options: any;
+    //   private chart2: AmChart;
+    //   private timer: any;
+    //   public pieChartLabels: string[] = ["Pending", "InProgress", "OnHold", "Complete", "Cancelled"];
+    //   public pieChartData: number[] = [21, 39, 10, 14, 16];
+    //   public pieChartType: string = 'pie';
+    //   public pieChartOptions: any = {
+    //     'backgroundColor': [
+    //       "#FF6384",
+    //       "#4BC0C0",
+    //       "#FFCE56",
+    //       "#E7E9ED",
+    //       "#36A2EB"
+    //     ]
+    //   }
+    //   dataSource: Object;
+    //   constructor(private AmCharts: AmChartsService) {
+    //     this.dataSource = {
+    //       "chart": {
+    //       "lowerLimit": "0",
+    //       "upperLimit": "100",
+    //       "showValue": "1",
+    //       "numberSuffix": "%",
+    //       "theme": "fusion",
+    //       "showToolTip": "0"
+    //   },
+    //   // Gauge Data
+    //   "colorRange": {
+    //       "color": [{
+    //           "minValue": "0",
+    //           "maxValue": "50",
+    //           "code": "#F2726F"
+    //       }, {
+    //           "minValue": "50",
+    //           "maxValue": "75",
+    //           "code": "#FFC533"
+    //       }, {
+    //           "minValue": "75",
+    //           "maxValue": "100",
+    //           "code": "#62B58F"
+    //       }]
+    //   },
+    //   "dials": {
+    //       "dial": [{
+    //           "value": "81"
+    //       }]
+    //   }
+    // }; // end of this.dataSource
+    //   } // end of constructor
+    //   makeRandomDataProvider() {
+    //     const dataProvider = [];
+    //     // Generate random data
+    //     for (let year = 1950; year <= 2005; ++year) {
+    //       dataProvider.push({
+    //         year: '' + year,
+    //         value: Math.floor(Math.random() * 100) - 50
+    //       });
+    //     }
+    //     return dataProvider;
+    //   }
+    //   makeOptions(dataProvider) {
+    //     return {
+    //       'type': 'serial',
+    //       'theme': 'dark',
+    //       'marginTop': 0,
+    //       'marginRight': 80,
+    //       'dataProvider': dataProvider,
+    //       'valueAxes': [{
+    //         'axisAlpha': 0,
+    //         'position': 'left'
+    //       }],
+    //       'graphs': [{
+    //         'id': 'g1',
+    //         'balloonText': '[[category]]<br><b><span style=\'font-size:14px;\'>[[value]]</span></b>',
+    //         'bullet': 'round',
+    //         'bulletSize': 8,
+    //         'lineColor': '#d1655d',
+    //         'lineThickness': 2,
+    //         'negativeLineColor': '#637bb6',
+    //         'type': 'smoothedLine',
+    //         'valueField': 'value'
+    //       }],
+    //       'chartScrollbar': {
+    //         'graph': 'g1',
+    //         'gridAlpha': 0,
+    //         'color': '#888888',
+    //         'scrollbarHeight': 55,
+    //         'backgroundAlpha': 0,
+    //         'selectedBackgroundAlpha': 0.1,
+    //         'selectedBackgroundColor': '#888888',
+    //         'graphFillAlpha': 0,
+    //         'autoGridCount': true,
+    //         'selectedGraphFillAlpha': 0,
+    //         'graphLineAlpha': 0.2,
+    //         'graphLineColor': '#c2c2c2',
+    //         'selectedGraphLineColor': '#888888',
+    //         'selectedGraphLineAlpha': 1
+    //       },
+    //       'chartCursor': {
+    //         'categoryBalloonDateFormat': 'YYYY',
+    //         'cursorAlpha': 0,
+    //         'valueLineEnabled': true,
+    //         'valueLineBalloonEnabled': true,
+    //         'valueLineAlpha': 0.5,
+    //         'fullWidth': true
+    //       },
+    //       'dataDateFormat': 'YYYY',
+    //       'categoryField': 'year',
+    //       'categoryAxis': {
+    //         'minPeriod': 'YYYY',
+    //         'parseDates': true,
+    //         'minorGridAlpha': 0.1,
+    //         'minorGridEnabled': true
+    //       },
+    //       'export': {
+    //         'enabled': true
+    //       }
+    //     };
+    //   }
+    //   ngAfterViewInit() {
+    //   }
+    //   // events on slice click
+    //   public chartClicked(e: any): void {
+    //     console.log(e);
+    //   }
+    //   // event on pie chart slice hover
+    //   public chartHovered(e: any): void {
+    //     console.log(e);
+    //   }
+    //   ngOnDestroy() {
+    //     clearInterval(this.timer);
+    //     // Cleanup chartdiv2
+    //     if (this.chart2) {
+    //       this.AmCharts.destroyChart(this.chart2);
+    //     }
+    //   }
+    //   ngOnInit() {
+    //     this.options = this.makeOptions(this.makeRandomDataProvider());
+    //     // Create chartdiv2
+    //     this.chart2 = this.AmCharts.makeChart('chartdiv', this.makeOptions(this.makeRandomDataProvider()));
+    //     this.timer= setInterval(() => {
+    //       // Update chartdiv1
+    //       this.options = this.makeOptions(this.makeRandomDataProvider());
+    //       // Update chartdiv2
+    //       this.AmCharts.updateChart(this.chart2, () => {
+    //         this.chart2.dataProvider = this.makeRandomDataProvider();
+    //       });
+    //     }, 1000);
+    //   }
+    TypographyComponent.prototype.ngOnInit = function () {
+    };
+    return TypographyComponent;
+}());
+TypographyComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'typography-cmp',
+        template: __webpack_require__("../../../../../src/app/typography/typography.component.html")
+    })
+], TypographyComponent);
+
+//# sourceMappingURL=typography.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/upgrade/upgrade.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"main-content\">\n    <div class=\"container-fluid\">\n        <div class=\"row\">\n            <div class=\"col-md-8 col-md-offset-2\">\n                <div class=\"card\">\n                    <div class=\"header text-center\">\n                        <h3 class=\"title\">Paper Dashboard</h3>\n                        <p class=\"category\">Are you looking for more components? Please check our Premium Version of Paper Dashboard Pro.</p>\n                        <br>\n                    </div>\n                    <div class=\"content table-responsive table-full-width table-upgrade\">\n                        <table class=\"table\">\n                            <thead>\n                                <th></th>\n                                <th class=\"text-center\">Free</th>\n                                <th class=\"text-center\">PRO</th>\n                            </thead>\n                            <tbody>\n                                <tr>\n                                    <td>Components</td>\n                                    <td>16</td>\n                                    <td>160</td>\n                                </tr>\n                                <tr>\n                                    <td>Plugins</td>\n                                    <td>4</td>\n                                    <td>15</td>\n                                </tr>\n                                <tr>\n                                    <td>Example Pages</td>\n                                    <td>4</td>\n                                    <td>25</td>\n                                </tr>\n                                <tr>\n                                    <td>Documentation</td>\n                                    <td><i class=\"fa fa-times text-danger\"></i></td>\n                                    <td><i class=\"fa fa-check text-success\"></i></td>\n                                </tr>\n                                <tr>\n                                    <td>SASS Files</td>\n                                    <td><i class=\"fa fa-check text-success\"></i></td>\n                                    <td><i class=\"fa fa-check text-success\"></i></td>\n                                </tr>\n                                <tr>\n                                    <td>Login/Register/Lock Pages</td>\n                                    <td><i class=\"fa fa-times text-danger\"></i></td>\n                                    <td><i class=\"fa fa-check text-success\"></i></td>\n                                </tr>\n                                <tr>\n                                    <td>Premium Support</td>\n                                    <td><i class=\"fa fa-times text-danger\"></i></td>\n                                    <td><i class=\"fa fa-check text-success\"></i></td>\n                                </tr>\n                                <tr>\n                                    <td></td>\n                                    <td>Free</td>\n                                    <td>Just $49</td>\n                                </tr>\n                                <tr>\n                                    <td></td>\n                                    <td>\n                                        <a href=\"#\" class=\"btn btn-round btn-fill btn-default disabled\">Current Version</a>\n                                    </td>\n                                    <td>\n                                        <a target=\"_blank\" href=\"https://www.creative-tim.com/product/paper-dashboard-pro-angular/?ref=pd-free-upgrade-live\" class=\"btn btn-round btn-fill btn-info\">Upgrade to PRO</a>\n                                    </td>\n                                </tr>\n                            </tbody>\n                        </table>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/upgrade/upgrade.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UpgradeComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var UpgradeComponent = (function () {
+    function UpgradeComponent() {
+    }
+    UpgradeComponent.prototype.ngOnInit = function () {
+    };
+    return UpgradeComponent;
+}());
+UpgradeComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'upgrade-cmp',
+        template: __webpack_require__("../../../../../src/app/upgrade/upgrade.component.html")
+    })
+], UpgradeComponent);
+
+//# sourceMappingURL=upgrade.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/user/user.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container-fluid dashboard\">\n\n\n    <div class=\"row\">\n        <div class=\"col-lg-2 col-sm-12\">\n            <div class=\"card\">\n                <div class=\"content customcontent\">\n                    <div class=\"row\">\n                        <div class=\"col-xs-12 customNumbers\">\n                            <div class=\"numbers\">\n                                <p>TOTAL CONNECTIONS</p>\n\n                            </div>\n                        </div>\n\n                        <div class=\"customNumber\">\n                            <h2 class=\"customH1\">6325</h2>\n                        </div>\n                    </div>\n\n                </div>\n            </div>\n        </div>\n\n\n        <div class=\"col-md-6 col-lg-8 col-sm-12\">\n            <div class=\"col-lg-12\">\n                <div class=\"card parkingcard\" style=\"padding-top: 1%;padding-bottom: 1%;\">\n                    <div class=\"content\">\n                        <div class=\"row\">\n                            <div class=\"col-xs-7 customNumbers\">\n                                <div class=\"numbers\">\n                                    <p>TOTAL NUMBER OF STP</p>\n\n                                </div>\n                            </div>\n\n\n                            <table class=\"table customtable1 waterscren\">\n                                <tr>\n                                    <td>\n                                        <div class=\"card\">\n\n                                            <div class=\"card-header numberheader\">102</div>\n                                            Functional\n\n                                        </div>\n                                    </td>\n                                    <td>\n                                        <div class=\"card\">\n\n                                            <div class=\"card-header numberheader\">102</div>\n                                            Non Functional\n                                        </div>\n                                    </td>\n                                    <td>\n                                        <div class=\"card\">\n\n                                            <div class=\"card-header numberheader\">102</div>\n                                            Running under capacity\n                                        </div>\n                                    </td>\n                                    <td>\n                                        <div class=\"card\">\n\n                                            <div class=\"card-header numberheader\">102</div>\n                                            Running over capacity\n                                        </div>\n                                    </td>\n                                    <td>\n                                        <div class=\"card\">\n\n                                            <div class=\"card-header numberheader\">102</div>\n                                            Running Full capacity\n                                        </div>\n                                    </td>\n\n\n                                </tr>\n                            </table>\n\n                        </div>\n\n                    </div>\n                </div>\n\n            </div>\n\n\n        </div>\n        <div class=\"col-lg-2 col-sm-12\">\n            <div class=\"card\">\n                <div class=\"content customcontent\">\n                    <div class=\"row\">\n                        <div class=\"col-xs-12 customNumbers\">\n                            <div class=\"numbers\">\n                                <p>STP's WITH PROBLEM</p>\n\n                            </div>\n                        </div>\n\n                        <div class=\"customNumber\">\n                            <h2 class=\"customH1\">24</h2>\n                        </div>\n                    </div>\n\n                </div>\n            </div>\n        </div>\n    </div>\n\n\n    <div class=\"row\">\n\n        <div class=\"col-lg-12 col-sm-12 \">\n\n            <div class=\"col-lg-2 col-sm-12\">\n                <div class=\"card parkingcard\" style=\"padding-top: 1%;padding-bottom: 1%;\">\n                    <div class=\"content\">\n                        <div class=\"row\">\n                            <div class=\"col-xs-12 customNumbers\">\n                                <div class=\"numbers\">\n                                    <p>DAILY SEWAGE WATER GENERATED</p>\n\n                                </div>\n                            </div>\n\n\n                            <table class=\"table customtable1 customtable2 parkingtable2\">\n                                <tr>\n\n                                    <td>\n                                        <p style=\"    border: none;\">\n                                            <span class=\"green\">0</span>\n                                            <br>\n                                            <br>\n                                            <span class=\"customspan1\">15</span>\n                                            <br>\n                                            <br>\n                                            <span class=\"customspan2\">LIGHTS ON</span>\n                                        </p>\n                                    </td>\n                                    <td>\n                                        <p style=\"    border: none;\">\n                                            <span class=\"orange\">0</span>\n                                            <br>\n                                            <br>\n                                            <span class=\"customspan1\">6300</span>\n                                            <br>\n                                            <br>\n                                            <span class=\"customspan2\">LIGHTS OFF</span>\n                                        </p>\n                                    </td>\n\n                                </tr>\n\n                            </table>\n\n                        </div>\n\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-lg-2 col-sm-12\">\n                <div class=\"card\">\n                    <div class=\"content customcontent\">\n                        <div class=\"row\">\n                            <div class=\"col-xs-12 customNumbers\">\n                                <div class=\"numbers\">\n                                    <p>TOTAL VOLUME OF WATER DISCHARGED TO STP</p>\n\n                                </div>\n                            </div>\n\n                            <div class=\"customNumber\">\n                                <h2 class=\"customH1\">24</h2>\n                            </div>\n                        </div>\n\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-lg-2 col-sm-12\">\n                <div class=\"card\">\n                    <div class=\"content customcontent\">\n                        <div class=\"row\">\n                            <div class=\"col-xs-12 customNumbers\">\n                                <div class=\"numbers\">\n                                    <p>TOTAL VOLUME OF WATER TREATED IN STP</p>\n\n                                </div>\n                            </div>\n\n                            <div class=\"customNumber\">\n                                <h2 class=\"customH1\">24</h2>\n                            </div>\n                        </div>\n\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-lg-2 col-sm-12\">\n                <div class=\"card\">\n                    <div class=\"content customcontent\">\n                        <div class=\"row\">\n                            <div class=\"col-xs-12 customNumbers\">\n                                <div class=\"numbers\">\n                                    <p>NUMBER OF SEWAGE INCIDENTS Per Km</p>\n\n                                </div>\n                            </div>\n\n                            <div class=\"customNumber\">\n                                <h2 class=\"customH1\">24</h2>\n                            </div>\n                        </div>\n\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-lg-2 col-sm-12\">\n                <div class=\"card\">\n                    <div class=\"content customcontent\">\n                        <div class=\"row\">\n                            <div class=\"col-xs-12 customNumbers\">\n                                <div class=\"numbers\">\n                                    <p>TOTAL SEWAGE BLOCKAGES</p>\n\n                                </div>\n                            </div>\n\n                            <div class=\"customNumber\">\n                                <h2 class=\"customH1\">24</h2>\n                            </div>\n                        </div>\n\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-lg-2 col-sm-12\">\n                <div class=\"card\">\n                    <div class=\"content customcontent\">\n                        <div class=\"row\">\n                            <div class=\"col-xs-12 customNumbers\">\n                                <div class=\"numbers\">\n                                    <p>BOD and COD COMPLIANCE</p>\n\n                                </div>\n                            </div>\n\n                            <div class=\"customNumber\">\n                                <h2 class=\"customH1\">24</h2>\n                            </div>\n                        </div>\n\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-lg-2 col-sm-12\">\n                <div class=\"card\">\n                    <div class=\"content customcontent\">\n                        <div class=\"row\">\n                            <div class=\"col-xs-12 customNumbers\">\n                                <div class=\"numbers\">\n                                    <p>WATER PURIFYING UNITS</p>\n\n                                </div>\n                            </div>\n\n                            <div class=\"customNumber\">\n                                <h2 class=\"customH1\">24</h2>\n                            </div>\n                        </div>\n\n                    </div>\n                </div>\n            </div>\n        </div>\n\n\n    </div>\n</div>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/user/user.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var UserComponent = (function () {
+    function UserComponent() {
+    }
+    UserComponent.prototype.ngOnInit = function () {
+    };
+    return UserComponent;
+}());
+UserComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'user-cmp',
+        template: __webpack_require__("../../../../../src/app/user/user.component.html")
+    })
+], UserComponent);
+
+//# sourceMappingURL=user.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/environments/environment.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return environment; });
+// The file contents for the current environment will overwrite these during build.
+// The build system defaults to the dev environment which uses `environment.ts`, but if you do
+// `ng build --env=prod` then `environment.prod.ts` will be used instead.
+// The list of which env maps to which file can be found in `.angular-cli.json`.
+// The file contents for the current environment will overwrite these during build.
+var environment = {
+    production: false
+};
+//# sourceMappingURL=environment.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/main.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__("../../../platform-browser-dynamic/@angular/platform-browser-dynamic.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__("../../../../../src/app/app.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__("../../../../../src/environments/environment.ts");
+
+
+
+
+if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["enableProdMode"])();
+}
+Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */]);
+//# sourceMappingURL=main.js.map
+
+/***/ }),
+
+/***/ 0:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__("../../../../../src/main.ts");
+
+
+/***/ })
+
+},[0]);
+//# sourceMappingURL=main.bundle.js.map
